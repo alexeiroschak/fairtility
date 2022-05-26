@@ -1,0 +1,65 @@
+.two-col-intro {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            padding: 60px;
+        }
+
+        @include breakpoint($portrait) {
+            flex-direction: column;
+            padding: 30px 20px;
+        }
+
+        &--left {
+            flex: 0 0 auto;
+            width: 280px;
+
+            @include breakpoint($portrait) {
+                width: 100%;
+            }
+
+            h2 {
+                margin: 0;
+                font-family: $archia-semi-bold;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 130%;
+                color: $warm-black;
+
+                @include breakpoint($portrait) {
+                    padding-bottom: 30px;
+                }
+
+                @include breakpoint($mobile) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &--right {
+            width: 700px;
+            font-size: 18px;
+            line-height: 150%;
+            color: $warm-black;
+
+            @include breakpoint($portrait) {
+                width: 100%;
+            }
+
+            @include breakpoint($mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+}

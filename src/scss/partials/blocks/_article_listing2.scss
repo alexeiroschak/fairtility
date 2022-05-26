@@ -1,0 +1,107 @@
+.article-listing2 {
+    padding: 97px 0;
+
+    &--row {
+        display: flex;
+        padding: 60px 0;
+        border-bottom: 1px solid rgba($warm-white, 0.25);
+
+        @include breakpoint($portrait) {
+            flex-direction: column;
+        }
+
+        &:first-of-type {
+            padding-top: 0;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        &--left {
+            flex: 0 0 auto;
+            padding-left: 120px;
+            padding-right: 20px;
+            width: math.div(420, 1660) * 100%;
+
+            @include breakpoint(1145px) {
+                padding-left: 0;
+            }
+
+            @include breakpoint($portrait) {
+                width: 100%;
+            }
+
+            h2 {
+                margin: 0;
+                font-family: $archia-semi-bold;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 130%;
+                color: $warm-white;
+
+                @include breakpoint($portrait) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        &--right {
+            flex: 1;
+
+            h3 {
+                margin: 0;
+                font-family: $archia-semi-bold;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 130%;
+                color: $warm-white;
+
+                @include breakpoint($portrait) {
+                    font-size: 24px;
+                }
+
+                @include breakpoint($mobile) {
+                    font-size: 18px;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: $chloe-teal;
+                }
+            }
+
+            span {
+                display: inline-block;
+                margin-top: 15px;
+                font-family: $archia-semi-bold;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 150%;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: rgba($warm-white, 0.5);
+
+                @include breakpoint($mobile) {
+                    font-size: 12px;
+                }
+            }
+
+            &--copy {
+                max-width: 820px;
+                margin-top: 30px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $warm-white;
+
+                    @include breakpoint($mobile) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

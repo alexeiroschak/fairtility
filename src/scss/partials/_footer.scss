@@ -1,0 +1,262 @@
+#footer {
+    margin-top: 201px;
+
+    &__wedges {
+        width: 100%;
+
+        @include breakpoint($mobile) {
+            display: none;
+        }
+
+        &_mobile {
+            display: none;
+            width: 100%;
+
+            @include breakpoint($mobile) {
+                display: block;
+            }
+        }
+    }
+
+    &__middle {
+        display: flex;
+        margin-top: 60px;
+        padding-bottom: 120px;
+        border-bottom: 1px solid rgba($warm-white, 0.25);
+
+        @include breakpoint($mobile) {
+            flex-direction: column;
+        }
+
+        &__left {
+            flex: 0 0 auto;
+            margin-right: 195px;
+            font-family: $archia-semi-bold;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 100%;
+            color: $warm-white;
+
+            @include breakpoint($tablet) {
+                margin-right: 50px;
+            }
+
+            @include breakpoint($mobile) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__right {
+            flex: 1;
+            max-width: 820px;
+
+            p {
+                margin: 0;
+                font-size: 18px;
+                line-height: 150%;
+                color: $warm-white;
+
+                @include breakpoint($mobile) {
+                    font-size: 16px;
+                }
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 40px;
+                font-family: $archia-semi-bold;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+                text-decoration: underline;
+                color: $chloe-teal;
+
+                @include breakpoint($mobile) {
+                    margin-top: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 162px;
+
+        @include breakpoint($tablet) {
+            flex-direction: column-reverse;
+        }
+
+        &__left {
+            &__logo {
+                display: block;
+                margin-top: 60px;
+
+                img {
+                    @include breakpoint($mobile) {
+                        height: 60px;
+                    }
+                }
+            }
+
+            p {
+                margin: 95px 0 0;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba($warm-white, 0.5);
+
+                @include breakpoint($mobile) {
+                    margin-top: 27px;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: rgba($warm-white, 0.5);
+                }
+            }
+        }
+
+        &__right {
+            display: flex;
+
+            @include breakpoint($portrait) {
+                flex-wrap: wrap;
+            }
+
+            .col {
+                margin-top: 60px;
+
+                &:first-child {
+                    @include breakpoint($portrait) {
+                        width: 100%;
+                    }
+                    
+                    ul {
+                        columns: 2;
+                        column-gap: 100px;
+
+                        @include breakpoint(1060px) {
+                            column-gap: 30px;
+                        }
+
+                        @include breakpoint($portrait) {
+                            column-gap: 0;
+                        }
+
+                        li {
+                            @include breakpoint($portrait) {
+                                width: 100%;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                line-height: 150%;
+                                color: $warm-white;
+
+                                @include breakpoint($mobile) {
+                                    font-size: 14px;
+                                }
+
+                                &:hover {
+                                    color: $chloe-teal;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-right: 100px;
+
+                    @include breakpoint($portrait) {
+                        width: 50%;
+                        margin-right: 0;
+                    }
+                }
+
+                &:last-child {
+                    @include breakpoint($portrait) {
+                        width: 50%;
+                    }
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin-right: 24px;
+
+                            a {
+                                text-decoration: none;
+                                color: $warm-white;
+
+                                @include breakpoint($mobile) {
+                                    font-size: 14px;
+                                }
+                                
+                                &:hover {
+                                    color: $chloe-teal;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                > span {
+                    display: block;
+                    margin-bottom: 21px;
+                    font-family: $archia-semi-bold;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.4em;
+                    color: $cyan-earth;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    margin: 0;
+                    line-height: 150%;
+                    color: $warm-white;
+
+                    @include breakpoint($mobile) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__request_demo_button {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 204px;
+        height: 42px;
+        font-family: $archia-semi-bold;
+        font-size: 18px;
+        font-weight: 600;
+        color: $warm-black;
+        background: $chloe-teal;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 20px rgba(31, 31, 30, 0.2);
+        cursor: pointer;
+        transition: background-color $transition-duration, color $transition-duration;
+
+        @include breakpoint($mobile) {
+            width: 175px;
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $warm-white;
+            background: $orange-1;
+        }
+    }
+}

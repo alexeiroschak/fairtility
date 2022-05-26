@@ -1,0 +1,75 @@
+.hero-alt {
+    padding: 20px 0;
+
+    .container {
+        display: flex;
+        gap: 20px;
+        height: 700px;
+
+        @include breakpoint(1200px) {
+            flex-direction: column;
+            height: auto;
+        }
+    }
+
+    &--left {
+        flex: 1;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+
+        @include breakpoint(1200px) {
+            flex: 0 0 auto;
+            width: 100%;
+            padding-bottom: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 34px;
+            left: 40px;
+            margin: 0;
+            max-width: 600px;
+            font-family: $archia-light;
+            font-size: 80px;
+            font-weight: 300;
+            line-height: 100%;
+            color: $warm-white;
+
+            @include breakpoint($mobile) {
+                font-size: 36px;
+            }
+        }
+    }
+
+    &--right {
+        flex: 0 0 auto;
+        position: relative;
+        width: 400px;
+        text-decoration: none;
+        background-size: cover;
+        background-position: center;
+
+        @include breakpoint(1200px) {
+            width: 100%;
+            padding-bottom: math.div(175, 300) * 100%;
+        }
+
+        span {
+            display: block;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            max-width: 166px;
+            font-family: $archia-semi-bold;
+            font-size: 42px;
+            line-height: 100%;
+            color: $warm-white;
+
+            @include breakpoint($mobile) {
+                max-width: 250px;
+                font-size: 36px;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.hero-headline {
+    h1 {
+        margin: 0;
+        padding: 120px 0;
+        font-family: $archia-light;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 100%;
+        text-align: center;
+        color: $warm-white;
+
+        @include breakpoint($mobile) {
+            font-size: 24px;
+        }
+
+        &.has-line {
+            border-bottom: 1px solid rgba($warm-white, 0.25);
+        }
+    }
+}

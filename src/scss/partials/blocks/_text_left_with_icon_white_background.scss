@@ -1,0 +1,89 @@
+.text-left-with-icon {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }       
+    }
+
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            padding: 60px;
+        }
+
+        @include breakpoint($portrait) {
+            padding: 60px 20px;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 30px 20px;
+        }
+
+        &--left {
+            flex: 0 0 auto;
+            width: math.div(780, 1420) * 100%;
+
+            @include breakpoint(1120px) {
+                width: 70%;
+            }
+
+            @include breakpoint($portrait) {
+                width: 100%;
+            }
+
+            h2 {
+                margin: 0;
+                font-family: $archia-semi-bold;
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 100%;
+                color: $warm-black;
+
+                @include breakpoint($mobile) {
+                    font-size: 36px;
+                }
+            }
+
+            &--copy {
+                max-width: 700px;
+                margin-top: 81px;
+
+                @include breakpoint($mobile) {
+                    margin-top: 60px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $warm-black;
+
+                    @include breakpoint($mobile) {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        color: $dark-cyan;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            flex: 0 0 auto;
+
+            @include breakpoint($portrait) {
+                display: none;
+            }
+
+            img {
+                margin-top: 58px;
+            }
+        }
+    }
+}

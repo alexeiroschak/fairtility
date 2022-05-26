@@ -1,0 +1,70 @@
+.two-col-with-form {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        display: flex;
+        gap: 130px;
+        padding: 120px;
+        background: $warm-white;
+
+        @include breakpoint(1300px) {
+            gap: 50px;
+        }
+
+        @include breakpoint(1200px) {
+            padding: 120px 60px;
+        }
+
+        @include breakpoint(1100px) {
+            padding: 60px 20px;
+        }
+
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+
+        &--left {
+            flex: 1;
+
+            h2 {
+                margin: 0;
+                font-family: $archia-semi-bold;
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 100%;
+                color: $warm-black;
+            }
+
+            &--copy {
+                margin-top: 81px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $warm-black;
+
+                    @include breakpoint($mobile) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            flex: 0 0 auto;
+
+            @import "../components/gravity_forms";
+
+            .gform_wrapper {
+                @include breakpoint($tablet) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

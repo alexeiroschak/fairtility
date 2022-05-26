@@ -1,0 +1,55 @@
+.two-col-content {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        display: flex;
+        gap: 140px;
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            gap: 60px;
+            padding: 60px;
+        }
+
+        @include breakpoint($portrait) {
+            flex-direction: column;
+            padding: 30px 20px;
+        }
+ 
+        .col {
+            flex: 1;
+            width: 50%;
+
+            @include breakpoint($portrait) {
+                width: 100%;
+            }
+
+            h2 {
+                margin: 0 0 60px;
+                font-family: $archia-semi-bold;
+                font-size: 24px;
+                line-height: 130%;
+                color: $warm-black;
+
+                @include breakpoint($mobile ) {
+                    font-size: 18px;
+                }
+            }
+
+            &--copy {
+                font-size: 18px;
+                line-height: 150%;
+
+                @include breakpoint($mobile) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

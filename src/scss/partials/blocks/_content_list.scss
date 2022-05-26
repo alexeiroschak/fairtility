@@ -1,0 +1,60 @@
+.content-list {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;   
+        }
+    }
+
+    &--container {
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            padding: 60px;   
+        }
+
+        @include breakpoint($portrait) {
+            padding: 30px 20px;
+        }
+
+        .item {
+            padding: 60px 0;
+            border-bottom: 1px solid rgba($warm-black, 0.25);
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            h3 {
+                max-width: 820px;
+                margin: 0 auto 30px;
+                font-family: $archia-semi-bold;
+                font-size: 18px;
+                line-height: 150%;
+                color: $warm-black;
+            }
+
+            &--copy {
+                max-width: 820px;
+                margin: 0 auto;
+
+                p {
+                    margin-top: 27px;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $warm-black;
+
+                    @include breakpoint($mobile) {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        color: $dark-cyan;
+                    }
+                }
+            }
+        }
+    }
+}

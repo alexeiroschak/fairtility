@@ -1,0 +1,55 @@
+body.home {
+    #unlock_new_data {
+        padding-top: 0;
+    }
+
+    #image1 {
+        .full-width-image {
+            &--container {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    #bottom_summary {
+        .text-callout {
+            &--container {
+                div {
+                    max-width: 100%;
+                    padding-top: 40px;
+                    border-top: 1px solid rgba($warm-black, 0.25);
+
+                    p {
+                        max-width: 1120px;
+                    }
+                }
+            }
+        }
+    }
+
+    #deeply_rooted {
+        padding-bottom: 0;
+
+        .container {
+            &:before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: 40px;
+                right: 40px;
+                height: 1px;
+                background:rgba($warm-white, 0.25);
+
+                @include breakpoint($tablet) {
+                    left: 20px;
+                    right: 20px;
+                }
+
+                @include breakpoint($mobile) {
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

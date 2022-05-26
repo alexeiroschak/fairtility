@@ -1,0 +1,60 @@
+.text-callout {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }       
+    }
+
+    &--container {
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            padding: 60px;
+        }
+
+        @include breakpoint($portrait) {
+            padding: 60px 20px;
+        }
+
+        @include breakpoint($mobile) {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            padding: 30px 20px;
+        }
+
+        div {
+            max-width: 1120px;
+            font-size: 18px;
+            line-height: 150%;
+            color: $warm-black;
+
+            @include breakpoint($mobile) {
+                padding: 0 20px;
+                font-size: 16px;
+            }
+
+            strong, b {
+                font-family: $archia-bold;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 60px;
+            font-family: $archia-semi-bold;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+            text-decoration: underline;
+            color: $dark-cyan;
+
+            @include breakpoint($mobile) {
+                margin-left: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}

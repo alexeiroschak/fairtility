@@ -1,0 +1,111 @@
+.listing-with-headline {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint(1320px) {
+            flex-direction: column;
+        }
+
+        @include breakpoint($tablet) {
+            padding: 60px;
+        }
+
+        @include breakpoint($portrait) {
+            padding: 30px 20px;
+        }
+
+        &--left {
+            flex: 0 0 auto;
+
+            h2 {
+                margin: 0;
+                padding-right: 20px;
+                font-family: $archia-semi-bold;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 130%;
+                color: $warm-black;
+
+                @include breakpoint(1320px) {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        &--right {
+            flex: 0 0 auto;
+            width: 700px;
+
+            @include breakpoint(1320px) {
+                width: 100%;
+            }
+
+            .item {
+                margin-bottom: 90px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &--header {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        margin: 0;
+                        font-family: $archia-semi-bold;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 150%;
+                        color: $warm-black;
+
+                        @include breakpoint($mobile) {
+                            font-size: 16px;
+                        }
+
+                        a {
+                            text-decoration: underline;
+                            color: $dark-cyan;
+                        }
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-family: $archia-semi-bold;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 150%;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: rgba($warm-black, 0.5);
+
+                        @include breakpoint($mobile) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                &--copy {
+                    margin-top: 14px;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $warm-black;
+
+                    @include breakpoint($mobile) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

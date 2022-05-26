@@ -1,0 +1,37 @@
+html, body {
+	font-family: $archia-regular;
+	font-size: 16px;
+	background: $warm-black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	overflow-wrap: normal;
+}
+
+a {
+	transition: color $transition-duration;
+}
+
+p {
+	margin: 0;
+}
+
+b, strong {
+	font-family: $archia-semi-bold;
+	font-weight: 600;
+}
+
+.container {
+	position: relative;
+	max-width: 1660px + 40px * 2;
+	margin: 0 auto;
+	padding: 0 40px;
+
+	@include breakpoint($tablet) {
+		padding: 0 20px;
+	}
+}

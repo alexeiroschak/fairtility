@@ -1,0 +1,73 @@
+#request_demo_flyout {
+    position: fixed;
+    top: 0;
+    right: -440px;
+    bottom: 0;
+    overflow: auto;
+    z-index: 99;
+    width: 390px;
+    padding: 61px 40px;
+    background: $warm-white;
+    box-shadow: -20px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: right $transition-duration;
+
+    &.show {
+        right: 0;
+    }
+
+    &__close_button {
+        position: absolute;
+        top: 62px;
+        right: 40px;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            svg {
+                path {
+                    fill: $orange-1;
+                }
+            }
+        }
+
+        svg {
+            path {
+                transition: fill $transition-duration;
+            }
+        }
+    }
+
+    h2 {
+        margin: 0;
+        font-family: $archia-semi-bold;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 100%;
+        color: $warm-black;
+    }
+
+    img {
+        display: block;
+        margin: 30px 0 53px;
+    }
+
+    @import "../components/gravity_forms";
+
+    .gform_wrapper {
+        width: 100%;
+    
+        .gform_body {
+            .gform_fields {
+                .gfield {
+                    &_radio {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

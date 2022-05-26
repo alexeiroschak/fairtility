@@ -1,0 +1,111 @@
+#header {
+    height: 90px;
+    background: rgba($warm-black, 0.95);
+
+    @include breakpoint($portrait) {
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        @include breakpoint($portrait) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+    &__logo {
+        @include breakpoint($portrait) {
+            padding: 20px 0;
+        }
+
+        img {
+            @include breakpoint($portrait) {
+                height: 40px;
+            }
+        }
+    }
+
+    &__notice {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 513px;
+        height: 100%;
+        border-top: 2px solid $chloe-teal;
+
+        @include breakpoint($portrait) {
+            width: 100%;
+            padding: 10px 0;
+            border-top: 1px solid rgba($warm-white, 0.25);
+            border-bottom: 1px solid rgba($warm-white, 0.25);
+            border-left: 2px solid $chloe-teal;
+
+            @include breakpoint($portrait) {
+                width: calc(100% + 40px);
+                margin-left: -20px;
+                padding: 10px 20px;
+            }
+        }
+
+        span {
+            font-size: 12px;
+            font-family: $archia-bold;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $warm-white;
+
+            @include breakpoint($portrait) {
+                display: none;
+            }
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration: underline;
+            color: $chloe-teal;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        position: absolute;
+        top: 33px;
+        right: 20px;
+        width: 30px;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        @include breakpoint($portrait) {
+            display: block;
+        }
+
+        &:hover {
+            span {
+                background: $orange-1;
+            }
+        }
+
+        span {
+            display: block;
+            height: 2px;
+            margin-bottom: 4px;
+            background: $chloe-teal;
+            transition: background-color $transition-duration;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+body.careers {
+    .summary {
+        padding-top: 0;
+
+        &--container {
+            border-top: 0;
+        }
+    }
+
+    .full-width-image {
+        &--container {
+            padding-top: 20px;
+        }
+    }
+
+    .text-callout {
+        &--container {
+            div {
+                max-width: 100%;
+                padding-top: 40px;
+                border-top: 1px solid rgba($warm-black, 0.25);
+
+                p {
+                    max-width: 1120px;
+                }
+            }
+        }
+    }
+}

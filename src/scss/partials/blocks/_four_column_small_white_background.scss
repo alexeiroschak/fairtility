@@ -1,0 +1,66 @@
+.four-column-small {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }       
+    }
+
+    &--container {
+        display: flex;
+        gap: math.div(100, 1420) * 100%;
+        padding: 60px 120px;
+        background: $warm-white;
+
+        @include breakpoint(1100px) {
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        @include breakpoint($tablet) {
+            padding: 60px;
+        }
+
+        @include breakpoint($portrait) {
+            padding: 60px 20px;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 30px 20px;
+        }
+
+        .col {
+            flex: 1;
+            width: 25%;
+
+            @include breakpoint(1100px) {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+    
+            h3 {
+                font-family: $archia-semi-bold;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17px;
+                letter-spacing: 0.4em;
+                text-transform: uppercase;
+                color: rgba($warm-black, 0.5);
+            }
+    
+            div {
+                margin-top: 15px;
+                font-family: $archia-semi-bold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29px;
+                color: $warm-black;
+
+                @include breakpoint($mobile) {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

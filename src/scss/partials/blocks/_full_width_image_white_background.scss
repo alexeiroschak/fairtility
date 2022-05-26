@@ -1,0 +1,28 @@
+.full-width-image {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }       
+    }
+
+    &--container {
+        padding: 60px 20px;
+        background: $warm-white;
+
+        @include breakpoint($mobile) {
+            padding: 30px 20px;
+        }
+
+        &--image {
+            padding-bottom: math.div(700, 1620) * 100%;
+            background-color: rgba($warm-black, 0.2);
+            background-size: cover;
+            background-position: center;
+
+            @include breakpoint($portrait) {
+                padding-bottom: 100%;
+            }
+        }
+    }
+}

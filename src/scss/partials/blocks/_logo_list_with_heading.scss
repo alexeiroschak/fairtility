@@ -1,0 +1,60 @@
+.logo-list-with-heading {
+    padding: 97px 0;
+
+    @include breakpoint($portrait) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint($mobile) {
+        padding: 30px 0;
+    }
+
+    .container {
+        display: flex;
+
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &--left {
+        flex: 0 0 auto;
+        width: 345px;
+        margin-right: 75px;
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        h2 {
+           font-family: $archia-semi-bold; 
+           font-size: 24px;
+           font-weight: 600;
+           line-height: 100%;
+           color: $warm-white;
+        }
+    }
+
+    &--right {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 -45px;
+
+        @include breakpoint($mobile) {
+            margin: 0 -10px;
+        }
+
+        img {
+            display: block;
+            margin: 25px 45px;
+
+            @include breakpoint($mobile) {
+                margin: 10px;
+                height: 27px;
+            }
+        }
+    }
+}

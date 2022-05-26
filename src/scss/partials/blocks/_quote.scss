@@ -1,0 +1,110 @@
+.quote {
+    padding: 97px 0;
+
+    @include breakpoint($portrait) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint($mobile) {
+        padding: 30px 0;
+    }
+
+    &--left {
+        position: absolute;
+        top: 0;
+        left: 120px + 40px;
+
+        @include breakpoint(1000px) {
+            left: 40px;
+        }
+
+        @include breakpoint($portrait) {
+            display: none;
+        }
+    }
+
+    &--container {
+        &--quote {
+            position: relative;
+            margin-left: math.div(420, 1660) * 100%;
+            font-size: 60px;
+            line-height: 130%;
+            color: $warm-white;
+
+            @include breakpoint($portrait) {
+                margin-left: 0;
+            }
+
+            @include breakpoint($mobile) {
+                font-size: 36px;
+            }
+
+            &:before {
+                content: '\201C';
+                position: absolute;
+                top: 0;
+                left: -43px;
+                font-size: 60px;
+                line-height: 130%;
+                color: $warm-white;
+            }
+
+            span {
+                text-decoration-color: $cyan-earth !important;
+            }
+        }
+
+        &--source {
+            display: flex;
+            align-items: center;
+            margin-top: 27px;
+            margin-left: math.div(420, 1660) * 100%;
+
+            @include breakpoint($portrait) {
+                margin-left: 0;
+            }
+
+            &--image {
+                width: 50px;
+                height: 50px;
+                background-color: rgba($warm-white, 0.2);
+                background-size: cover;
+                border-radius: 50px;
+            }
+
+            &--text {
+                margin-left: 20px;
+                font-family: $archia-bold;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: rgba($warm-white, 0.5);
+
+                @include breakpoint($mobile) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &--link {
+            display: inline-block;
+            margin-top: 67px;
+            margin-left: math.div(420, 1660) * 100%;
+            font-family: $archia-semi-bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $chloe-teal;
+            
+            @include breakpoint($portrait) {
+                margin-left: 0;
+            }
+
+            @include breakpoint($mobile) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}

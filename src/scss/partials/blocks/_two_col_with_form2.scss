@@ -1,0 +1,147 @@
+.two-col-with-form2 {
+    padding: 97px 0;
+
+    .container {
+        display: flex;
+        gap: 130px;
+
+        @include breakpoint(1000px) {
+            gap: 50px;
+        }
+
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &--left {
+        flex: 1;
+
+        h2 {
+            margin: 0 0 81px;
+            font-family: $archia-semi-bold;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 100%;
+            color: $warm-black;
+        }
+
+        &--copy {
+            p {
+                margin-top: 27px;
+                font-size: 18px;
+                line-height: 150%;
+                color: $warm-white;
+
+                @include breakpoint($mobile) {
+                    font-size: 16px;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: $chloe-teal;
+                }
+            }
+        }
+    }
+
+    &--right {
+        flex: 0 0 auto;
+
+        @import "../components/gravity_forms";
+
+        .gform_wrapper {
+            @include breakpoint($tablet) {
+                width: 100%;
+            }
+
+            .gform_body {
+                .gform_fields {
+                    .gfield {
+                        &:nth-child(2n) {
+                            padding-right: 55px;
+                            padding-left: 0;
+
+                            @include breakpoint(640px) {
+                                padding-right: 0;
+                            }
+                        }
+        
+                        &:nth-child(2n-1) {
+                            padding-left: 55px;
+                            padding-right: 0;
+
+                            @include breakpoint(640px) {
+                                padding-left: 0;
+                            }
+                        }
+
+                        &_label {
+                            color: $warm-white;
+                        }
+        
+                        .select2-container {
+                            &--default {
+                                .select2 {
+                                    &-selection {
+                                        background-color: rgba($warm-white, 0.1);
+        
+                                        &__rendered {
+                                            color: $warm-white;
+                                        }
+        
+                                        &__arrow {
+                                            &:after {
+                                                background: url(../img/dropdown-arrow-white.svg) no-repeat;
+                                            }
+                                        }
+                                    }
+        
+                                    &-dropdown {
+                                        .select2 {
+                                            &-results {
+                                                &__option {
+                                                    color: $warm-white;
+                                                    background-color: rgba($warm-white, 0.1);
+
+                                                    &--highlighted {
+                                                        color: $warm-black;
+                                                        background-color: $chloe-teal;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        h2 {
+                            color: $warm-white;
+                        }
+        
+                        input[type=text], 
+                        input[type=email], 
+                        input[type=tel] {
+                            color: $warm-white;
+                            background: rgba($warm-white, 0.1);
+                        }
+
+                        textarea {
+                            width: 100%;
+                            height: 168px;
+                            padding: 10px 12px;
+                            font-size: 18px;
+                            line-height: 150%;
+                            color: $warm-white;
+                            background: rgba($warm-white, 0.1);
+                            border: none;
+                            border-radius: 10px;
+                            resize: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

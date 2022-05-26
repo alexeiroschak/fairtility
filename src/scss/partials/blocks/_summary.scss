@@ -1,0 +1,55 @@
+.summary {
+    padding: 97px 0;
+
+    @include breakpoint($mobile) {
+        padding: 30px 0;
+    }
+
+    &--container {
+        display: flex;
+        padding-top: 60px;
+        border-top: 1px solid rgba($warm-white, 0.25);
+
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+
+        @include breakpoint($mobile) {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            padding: 60px 20px 0;
+        }
+
+        &--left {
+            width: math.div(420, 1660) * 100%;
+
+            @include breakpoint($tablet) {
+                width: 100%;
+            }
+    
+            h2 {
+                margin: 0;
+                font-family: $archia-semi-bold;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 100%;
+                color: $warm-white;
+
+                @include breakpoint($tablet) {
+                    margin-bottom: 56px;
+                }
+            }
+        }
+    
+        &--right {
+            flex: 1;
+            max-width: 820px;
+    
+            p {
+                font-size: 18px;
+                line-height: 150%;
+                color: $warm-white;
+            }
+        }
+    }
+}

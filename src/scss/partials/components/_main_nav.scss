@@ -1,0 +1,144 @@
+#main_nav {
+    background: rgba($warm-black, 0.95);
+    box-shadow: 0px 10px 0px rgba(31, 31, 30, 0.2);
+
+    @include breakpoint($portrait) {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        padding: 0;
+        background: $warm-white;
+        transition: right $transition-duration;
+
+        &.open {
+            right: 0;
+        }
+    }
+
+    &__header {
+        display: none;
+        position: relative;
+        padding: 20px;
+
+        @include breakpoint($portrait) {
+            display: block;
+        }
+
+        &__close {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            margin-top: -12px;
+            padding: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                svg {
+                    path {
+                        fill: $orange-1;
+                    }
+                }
+            }
+
+            svg {
+                path {
+                    transition: fill $transition-duration;
+                }
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba($warm-white, 0.25);
+        border-bottom: 1px solid rgba($warm-white, 0.25);
+
+        @include breakpoint($portrait) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        li {
+            margin-right: 40px;
+
+            @include breakpoint(1002px) {
+                margin-right: 20px;
+            }
+
+            @include breakpoint(902px) {
+                margin-right: 10px;
+            }
+
+            @include breakpoint($portrait) {
+                width: 100%;
+                border-top: 1px solid rgba($warm-black, 0.25);
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                display: block;
+                position: relative;
+                padding: 10px 0;
+                font-size: 16px;
+                line-height: 22px;
+                text-decoration: none;
+                color: $warm-white;
+
+                @include breakpoint($portrait) {
+                    padding: 25px 20px;
+                    font-size: 24px;
+                    color: $warm-black;
+                }
+
+                @include breakpoint(812px) {
+                    font-size: 14px;
+                }
+
+                &.demo {
+                    font-family: $archia-semi-bold;
+                    font-weight: 600;
+                }
+
+                &:hover, &.active {
+                    color: $chloe-teal;
+
+                    @include breakpoint($portrait) {
+                        color: $dark-cyan;
+                    }
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    opacity: 0;
+                    background: $chloe-teal;
+                    transition: opacity $transition-duration;
+
+                    @include breakpoint($portrait) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
