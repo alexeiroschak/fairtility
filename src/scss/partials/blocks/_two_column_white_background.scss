@@ -53,9 +53,7 @@
             }
 
             &--preview {
-                padding-bottom: math.div(320, 640) * 100%;
-                //background-color: rgba($warm-black, 0.2);
-                background-size: cover;
+                max-width: 100%;
             }
 
             h2 {

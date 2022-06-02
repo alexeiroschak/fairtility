@@ -19287,8 +19287,7 @@ b, strong {
   }
 }
 .two-column-white-background--container--col--preview {
-  padding-bottom: 50%;
-  background-size: cover;
+  max-width: 100%;
 }
 .two-column-white-background--container--col h2 {
   margin-top: 60px;
