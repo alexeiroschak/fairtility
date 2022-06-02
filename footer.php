@@ -3,10 +3,15 @@
 				<img id="footer__wedges" src="<?= get_template_directory_uri() ?>/assets/img/wedges.svg">
 				<img id="footer__wedges_mobile" src="<?= get_template_directory_uri() ?>/assets/img/wedges-mobile.svg">
 				<div id="footer__middle">
-					<div id="footer__middle__left">Life from the start.</div>
+					<?php
+						$footer = get_field('global_footer', 'option');
+					?>
+					<div id="footer__middle__left"><?= $footer['headline'] ?></div>
 					<div id="footer__middle__right">
-						<p>Life, even at its earliest stages, is rich with stories. Discover how Chloe can unlock a new frontier of data and help you discover the untold stories across the entire IVF journey.</p>
-						<a href="#" id="footer__middle__right__cta">Request a demo →</a>
+						<?= $footer['copy'] ?>
+						<?php if (!empty($footer['link_text'])) : ?>
+							<a href="<?= $footer['link_url'] ?>" id="footer__middle__right__cta"><?= $footer['link_text'] ?></a>
+						<?php endif ?>
 					</div>
 				</div>
 				<div id="footer__bottom">
@@ -19,17 +24,11 @@
 					<div id="footer__bottom__right">
 						<div class="col">
 							<span>SITEMAP</span>
-							<ul>
-								<li><a href="/">Home</a></li>
-								<li><a href="#">Embryo Grading</a></li>
-								<li><a href="#">Transparent AI</a></li>
-								<li><a href="/media-publications">Media &amp; Publications</a></li>
-								<li><a href="/request-a-demo">Request a Demo</a></li>
-								<li><a href="/faq">FAQ</a></li>
-								<li><a href="/about-fairtility">About Us</a></li>
-								<li><a href="/careers">Careers</a></li>
-								<li><a href="/contact-us">Contact Us</a></li>
-							</ul>
+							<?php
+								wp_nav_menu([
+									'menu' => 'Footer Menu'
+								])
+							?>
 						</div>
 						<div class="col">
 							<span>CONTACT</span>

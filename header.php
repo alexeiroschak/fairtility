@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title><?php the_title(); ?></title>
+		<link rel="shortcut icon" href="<?= get_template_directory_uri() ?>/assets/img/favicon.png" type="image/png">
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class( get_page_slug() ); ?>>
@@ -47,12 +48,9 @@
 					</svg>
 				</button>
 			</div>
-			<ul>
-				<li><a href="#">Embryo Grading</a></li>
-				<li><a href="#">Transparent AI</a></li>
-				<li><a href="/media-publications" <?php if (is_page('media-publications')) { echo 'class="active"'; } ?>>Media & Publications</a></li>
-				<li><a href="/about-fairtility" <?php if (is_page('about-fairtility')) { echo 'class="active"'; } ?>>About Fairtility</a></li>
-				<li><a href="/faq" <?php if (is_page('faq')) { echo 'class="active"'; } ?>>FAQ</a></li>
-				<li><a href="/request-a-demo" class="demo <?php if (is_page('request-a-demo')) { echo 'active'; } ?>">Request a Demo →</a></li>
-			</ul>
+			<?php
+				wp_nav_menu([
+					'menu' => 'Header Menu'
+				])
+			?>
 		</nav>

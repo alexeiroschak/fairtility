@@ -18137,13 +18137,14 @@ b, strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 513px;
+  gap: 24px;
+  max-width: 600px;
   height: 100%;
   border-top: 2px solid #8BC4C1;
 }
 @media screen and (max-width: 768px) {
   #header__notice {
-    width: 100%;
+    max-width: 100%;
     padding: 10px 0;
     border-top: 1px solid rgba(236, 250, 236, 0.25);
     border-bottom: 1px solid rgba(236, 250, 236, 0.25);
@@ -18152,7 +18153,7 @@ b, strong {
 }
 @media screen and (max-width: 768px) and (max-width: 768px) {
   #header__notice {
-    width: calc(100% + 40px);
+    min-width: calc(100% + 40px);
     margin-left: -20px;
     padding: 10px 20px;
   }
@@ -18290,6 +18291,21 @@ b, strong {
 #main_nav ul li:last-child {
   margin-right: 0;
 }
+#main_nav ul li:hover a, #main_nav ul li.current-menu-item a {
+  color: #8BC4C1;
+}
+@media screen and (max-width: 768px) {
+  #main_nav ul li:hover a, #main_nav ul li.current-menu-item a {
+    color: #009898;
+  }
+}
+#main_nav ul li:hover a:after, #main_nav ul li.current-menu-item a:after {
+  opacity: 1;
+}
+#main_nav ul li.demo a {
+  font-family: archiasemibold, sans-serif;
+  font-weight: 600;
+}
 #main_nav ul li a {
   display: block;
   position: relative;
@@ -18310,21 +18326,6 @@ b, strong {
   #main_nav ul li a {
     font-size: 14px;
   }
-}
-#main_nav ul li a.demo {
-  font-family: archiasemibold, sans-serif;
-  font-weight: 600;
-}
-#main_nav ul li a:hover, #main_nav ul li a.active {
-  color: #8BC4C1;
-}
-@media screen and (max-width: 768px) {
-  #main_nav ul li a:hover, #main_nav ul li a.active {
-    color: #009898;
-  }
-}
-#main_nav ul li a:hover:after, #main_nav ul li a.active:after {
-  opacity: 1;
 }
 #main_nav ul li a:after {
   content: "";
@@ -18735,6 +18736,7 @@ b, strong {
   flex: 0 0 auto;
   position: relative;
   width: 400px;
+  overflow: hidden;
   text-decoration: none;
   background-size: cover;
   background-position: center;
@@ -18744,6 +18746,17 @@ b, strong {
     width: 100%;
     padding-bottom: 58.3333333333%;
   }
+}
+.hero-alt--right video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
 }
 .hero-alt--right span {
   display: block;
