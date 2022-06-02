@@ -17,11 +17,14 @@
 
     &--left {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-right: 20px;
 
         h1 {
-            max-width: 588px;
-            margin: 240px 0 0;
+            max-width: 620px;
+            margin: 0;
             font-family: $archia-regular;
             font-size: 80px;
             font-weight: 400;
@@ -39,7 +42,7 @@
 
         &--copy {
             max-width: 620px;
-            margin-top: 159px;
+            margin-top: 80px;
 
             @include breakpoint($tablet) {
                 margin-top: 40px;
@@ -67,7 +70,7 @@
     &--right {
         flex: 0 0 auto;
         width: math.div(820, 1660) * 100%;
-        background-color: rgba($warm-white, 0.1);
+        //background-color: rgba($warm-white, 0.1);
         background-size: cover;
 
         @include breakpoint($tablet) {
