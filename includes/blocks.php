@@ -244,5 +244,14 @@ add_action('acf/init', function() {
             'mode' => 'edit',
             'render_template' => 'templates/blocks/article-listing2.php'
         ]);
+
+        acf_register_block_type([
+            'name' => 'content2',
+            'title' => __('Content (White Background)'),
+            'description' => __('Content (White Background) Block'),
+            'keywords' => [ 'content' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/content-white-background.php'
+        ]);
     }
 });
