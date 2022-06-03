@@ -18073,6 +18073,7 @@ html, body {
 }
 
 h1, h2, h3, h4 {
+  margin: 0;
   overflow-wrap: normal;
 }
 
@@ -18137,13 +18138,14 @@ b, strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 513px;
+  gap: 24px;
+  max-width: 600px;
   height: 100%;
   border-top: 2px solid #8BC4C1;
 }
 @media screen and (max-width: 768px) {
   #header__notice {
-    width: 100%;
+    max-width: 100%;
     padding: 10px 0;
     border-top: 1px solid rgba(236, 250, 236, 0.25);
     border-bottom: 1px solid rgba(236, 250, 236, 0.25);
@@ -18152,7 +18154,7 @@ b, strong {
 }
 @media screen and (max-width: 768px) and (max-width: 768px) {
   #header__notice {
-    width: calc(100% + 40px);
+    min-width: calc(100% + 40px);
     margin-left: -20px;
     padding: 10px 20px;
   }
@@ -18290,6 +18292,21 @@ b, strong {
 #main_nav ul li:last-child {
   margin-right: 0;
 }
+#main_nav ul li:hover a, #main_nav ul li.current-menu-item a {
+  color: #8BC4C1;
+}
+@media screen and (max-width: 768px) {
+  #main_nav ul li:hover a, #main_nav ul li.current-menu-item a {
+    color: #009898;
+  }
+}
+#main_nav ul li:hover a:after, #main_nav ul li.current-menu-item a:after {
+  opacity: 1;
+}
+#main_nav ul li.demo a {
+  font-family: archiasemibold, sans-serif;
+  font-weight: 600;
+}
 #main_nav ul li a {
   display: block;
   position: relative;
@@ -18310,21 +18327,6 @@ b, strong {
   #main_nav ul li a {
     font-size: 14px;
   }
-}
-#main_nav ul li a.demo {
-  font-family: archiasemibold, sans-serif;
-  font-weight: 600;
-}
-#main_nav ul li a:hover, #main_nav ul li a.active {
-  color: #8BC4C1;
-}
-@media screen and (max-width: 768px) {
-  #main_nav ul li a:hover, #main_nav ul li a.active {
-    color: #009898;
-  }
-}
-#main_nav ul li a:hover:after, #main_nav ul li a.active:after {
-  opacity: 1;
 }
 #main_nav ul li a:after {
   content: "";
@@ -18629,11 +18631,14 @@ b, strong {
 }
 .hero--left {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-right: 20px;
 }
 .hero--left h1 {
-  max-width: 588px;
-  margin: 240px 0 0;
+  max-width: 620px;
+  margin: 0;
   font-family: archiaregular, sans-serif;
   font-size: 80px;
   font-weight: 400;
@@ -18652,7 +18657,7 @@ b, strong {
 }
 .hero--left--copy {
   max-width: 620px;
-  margin-top: 159px;
+  margin-top: 80px;
 }
 @media screen and (max-width: 900px) {
   .hero--left--copy {
@@ -18677,7 +18682,6 @@ b, strong {
 .hero--right {
   flex: 0 0 auto;
   width: 49.3975903614%;
-  background-color: rgba(236, 250, 236, 0.1);
   background-size: cover;
 }
 @media screen and (max-width: 900px) {
@@ -18735,6 +18739,7 @@ b, strong {
   flex: 0 0 auto;
   position: relative;
   width: 400px;
+  overflow: hidden;
   text-decoration: none;
   background-size: cover;
   background-position: center;
@@ -18744,6 +18749,17 @@ b, strong {
     width: 100%;
     padding-bottom: 58.3333333333%;
   }
+}
+.hero-alt--right video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
 }
 .hero-alt--right span {
   display: block;
@@ -19272,9 +19288,7 @@ b, strong {
   }
 }
 .two-column-white-background--container--col--preview {
-  padding-bottom: 50%;
-  background-color: rgba(31, 31, 30, 0.2);
-  background-size: cover;
+  max-width: 100%;
 }
 .two-column-white-background--container--col h2 {
   margin-top: 60px;
@@ -20930,6 +20944,41 @@ b, strong {
 }
 @media screen and (max-width: 600px) {
   .article-listing2--row--right--copy p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-white-background .container {
+    padding: 0;
+  }
+}
+.content-white-background--container {
+  padding: 60px 120px;
+  background: #ECFAEC;
+}
+@media screen and (max-width: 900px) {
+  .content-white-background--container {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-white-background--container {
+    padding: 30px 20px;
+  }
+}
+.content-white-background--content {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.content-white-background--content p {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1F1F1E;
+}
+@media screen and (max-width: 600px) {
+  .content-white-background--content p {
     font-size: 16px;
   }
 }
