@@ -9,12 +9,12 @@
     &--container {
         display: flex;
         gap: 140px;
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
             gap: 60px;
-            padding: 60px;
+            padding: 30px 60px;
         }
 
         @include breakpoint($portrait) {

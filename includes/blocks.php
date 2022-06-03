@@ -253,5 +253,14 @@ add_action('acf/init', function() {
             'mode' => 'edit',
             'render_template' => 'templates/blocks/content-white-background.php'
         ]);
+
+        acf_register_block_type([
+            'name' => 'spacer',
+            'title' => __('Spacer (White Background)'),
+            'description' => __('Spacer (White Background) Block'),
+            'keywords' => [ 'space', 'spacer' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/spacer.php'
+        ]);
     }
 });

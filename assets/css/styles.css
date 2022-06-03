@@ -18815,7 +18815,7 @@ b, strong {
 }
 
 .three-column {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .three-column--container {
   display: flex;
@@ -18878,7 +18878,7 @@ b, strong {
 }
 
 .two-col-center-stack {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .two-col-center-stack--row {
   display: flex;
@@ -18983,14 +18983,9 @@ b, strong {
 }
 
 .quote {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 @media screen and (max-width: 768px) {
-  .quote {
-    padding: 60px 0;
-  }
-}
-@media screen and (max-width: 600px) {
   .quote {
     padding: 30px 0;
   }
@@ -19095,7 +19090,7 @@ b, strong {
 }
 
 .image-and-text {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .image-and-text .container {
   display: flex;
@@ -19180,12 +19175,7 @@ b, strong {
 }
 
 .summary {
-  padding: 97px 0;
-}
-@media screen and (max-width: 600px) {
-  .summary {
-    padding: 30px 0;
-  }
+  padding: 30px 0;
 }
 .summary--container {
   display: flex;
@@ -19242,7 +19232,7 @@ b, strong {
 }
 .two-column-white-background--container {
   display: flex;
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19327,13 +19317,8 @@ b, strong {
   }
 }
 .full-width-image--container {
-  padding: 60px 20px;
+  padding: 30px 20px;
   background: #ECFAEC;
-}
-@media screen and (max-width: 600px) {
-  .full-width-image--container {
-    padding: 30px 20px;
-  }
 }
 .full-width-image--container--image {
   padding-bottom: 43.2098765432%;
@@ -19355,20 +19340,15 @@ b, strong {
 .text-left-with-icon--container {
   display: flex;
   justify-content: space-between;
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .text-left-with-icon--container {
-    padding: 60px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  .text-left-with-icon--container {
-    padding: 60px 20px;
-  }
-}
-@media screen and (max-width: 600px) {
   .text-left-with-icon--container {
     padding: 30px 20px;
   }
@@ -19443,7 +19423,7 @@ b, strong {
 .four-column-small--container {
   display: flex;
   gap: 7.0422535211%;
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 1100px) {
@@ -19454,15 +19434,10 @@ b, strong {
 }
 @media screen and (max-width: 900px) {
   .four-column-small--container {
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
-  .four-column-small--container {
-    padding: 60px 20px;
-  }
-}
-@media screen and (max-width: 600px) {
   .four-column-small--container {
     padding: 30px 20px;
   }
@@ -19507,24 +19482,23 @@ b, strong {
   }
 }
 .text-callout--container {
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .text-callout--container {
-    padding: 60px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 768px) {
   .text-callout--container {
-    padding: 60px 20px;
+    padding: 30px 20px;
   }
 }
 @media screen and (max-width: 600px) {
   .text-callout--container {
     width: calc(100% + 40px);
     margin-left: -20px;
-    padding: 30px 20px;
   }
 }
 .text-callout--container div {
@@ -19566,12 +19540,12 @@ b, strong {
   }
 }
 .two-col-center-stack-white-bg--container {
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .two-col-center-stack-white-bg--container {
-    padding: 60px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -19683,12 +19657,12 @@ b, strong {
 .two-col-intro--container {
   display: flex;
   justify-content: space-between;
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .two-col-intro--container {
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -19742,14 +19716,9 @@ b, strong {
 }
 
 .logo-list-with-heading {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 @media screen and (max-width: 768px) {
-  .logo-list-with-heading {
-    padding: 60px 0;
-  }
-}
-@media screen and (max-width: 600px) {
   .logo-list-with-heading {
     padding: 30px 0;
   }
@@ -19811,13 +19780,13 @@ b, strong {
 .two-col-content--container {
   display: flex;
   gap: 140px;
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .two-col-content--container {
     gap: 60px;
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -19858,7 +19827,7 @@ b, strong {
 }
 
 .bio-list {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .bio-list h2 {
   margin: 0 0 89px;
@@ -19911,7 +19880,7 @@ b, strong {
 
 .hero-headline h1 {
   margin: 0;
-  padding: 120px 0;
+  padding: 30px 0;
   font-family: archialight, sans-serif;
   font-size: 60px;
   font-weight: 300;
@@ -19934,12 +19903,12 @@ b, strong {
   }
 }
 .content-list--container {
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .content-list--container {
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -20012,7 +19981,7 @@ b, strong {
 .two-col-with-form--container {
   display: flex;
   gap: 130px;
-  padding: 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 1300px) {
@@ -20022,12 +19991,12 @@ b, strong {
 }
 @media screen and (max-width: 1200px) {
   .two-col-with-form--container {
-    padding: 120px 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 1100px) {
   .two-col-with-form--container {
-    padding: 60px 20px;
+    padding: 30px 20px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -20283,7 +20252,7 @@ b, strong {
 }
 
 .two-col-with-form2 {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .two-col-with-form2 .container {
   display: flex;
@@ -20615,7 +20584,7 @@ b, strong {
 .listing-with-headline--container {
   display: flex;
   justify-content: space-between;
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 1320px) {
@@ -20625,7 +20594,7 @@ b, strong {
 }
 @media screen and (max-width: 900px) {
   .listing-with-headline--container {
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -20714,7 +20683,7 @@ b, strong {
 }
 
 .content {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .content--content {
   max-width: 820px;
@@ -20738,12 +20707,12 @@ b, strong {
   }
 }
 .article-listing--container {
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .article-listing--container {
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -20848,7 +20817,7 @@ b, strong {
 }
 
 .article-listing2 {
-  padding: 97px 0;
+  padding: 30px 0;
 }
 .article-listing2--row {
   display: flex;
@@ -20958,12 +20927,12 @@ b, strong {
   }
 }
 .content-white-background--container {
-  padding: 60px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
   .content-white-background--container {
-    padding: 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -20985,6 +20954,10 @@ b, strong {
   .content-white-background--content p {
     font-size: 16px;
   }
+}
+
+.spacer--container {
+  background: #ECFAEC;
 }
 
 body.home #unlock_new_data {

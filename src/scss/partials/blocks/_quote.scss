@@ -1,11 +1,7 @@
 .quote {
-    padding: 97px 0;
+    padding: 30px 0;
 
     @include breakpoint($portrait) {
-        padding: 60px 0;
-    }
-
-    @include breakpoint($mobile) {
         padding: 30px 0;
     }
 

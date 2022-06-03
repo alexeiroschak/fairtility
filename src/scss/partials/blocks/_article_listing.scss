@@ -7,11 +7,11 @@
     }
 
     &--container {
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px 60px;
         }
 
         @include breakpoint($portrait) {

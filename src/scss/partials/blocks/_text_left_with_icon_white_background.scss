@@ -9,18 +9,14 @@
     &--container {
         display: flex;
         justify-content: space-between;
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px;
         }
 
         @include breakpoint($portrait) {
-            padding: 60px 20px;
-        }
-
-        @include breakpoint($mobile) {
             padding: 30px 20px;
         }
 
