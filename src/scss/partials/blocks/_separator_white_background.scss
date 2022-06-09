@@ -1,5 +1,4 @@
-.full-width-image {
-
+.separator-white-background {
     .container {
         @include breakpoint($mobile) {
             padding: 0;
@@ -9,10 +8,12 @@
     &--container {
         padding: 30px 20px;
         background: $warm-white;
+    }
 
-        &--image {
-            max-width: 100%;
-            height: auto;
-        }
+    hr {
+        height: 1px;
+        margin: 0;
+        background: rgba($warm-black, 0.25);
+        border: none;
     }
 }

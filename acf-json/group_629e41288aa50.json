@@ -1,12 +1,12 @@
 {
-    "key": "group_629a1bf09a13b",
-    "title": "Block - Spacer (White Background)",
+    "key": "group_629e41288aa50",
+    "title": "Block - Full-Width Image Alt. (White Background)",
     "fields": [
         {
-            "key": "field_629a1c03620fa",
-            "label": "Spacing Amount",
-            "name": "spacing_amount",
-            "type": "number",
+            "key": "field_629e414325ff5",
+            "label": "Image (Mobile)",
+            "name": "image_mobile",
+            "type": "image",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -15,13 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "min": "",
-            "max": "",
-            "step": ""
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -29,7 +32,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/spacer"
+                "value": "acf\/full-width-image-alt"
             }
         ]
     ],
@@ -42,5 +45,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654271279
+    "modified": 1654538599
 }

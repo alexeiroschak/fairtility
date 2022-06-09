@@ -1,6 +1,6 @@
 <section id="<?= get_field('section_id') ?>" class="block quote">
     <div class="container">
-        <img src="<?= get_template_directory_uri() ?>/assets/img/quote-wedges.svg" class="quote--left">
+        <img src="<?= get_field('left_icon') ?>" class="quote--left">
         <div class="quote--container">
             <div class="quote--container--quote"><?= get_field('quote') ?></div>
             <div class="quote--container--source">

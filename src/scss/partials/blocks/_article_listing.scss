@@ -39,7 +39,7 @@
 
         &--left {
             flex: 0 0 auto;
-            width: math.div(420, 1660) * 100%;
+            width: 372px;
 
             @include breakpoint(1110px) {
                 width: 100%;

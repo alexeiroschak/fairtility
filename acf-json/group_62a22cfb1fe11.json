@@ -1,14 +1,14 @@
 {
-    "key": "group_629a1bf09a13b",
-    "title": "Block - Spacer (White Background)",
+    "key": "group_62a22cfb1fe11",
+    "title": "Post Fields",
     "fields": [
         {
-            "key": "field_629a1c03620fa",
-            "label": "Spacing Amount",
-            "name": "spacing_amount",
-            "type": "number",
-            "instructions": "",
-            "required": 1,
+            "key": "field_62a22d364ad90",
+            "label": "External Link",
+            "name": "external_link",
+            "type": "text",
+            "instructions": "Use this field to specify an external link for this post. When clicked on the site, the user will open this link instead of viewing internal content.",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -19,17 +19,15 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "min": "",
-            "max": "",
-            "step": ""
+            "maxlength": ""
         }
     ],
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf\/spacer"
+                "value": "post"
             }
         ]
     ],
@@ -42,5 +40,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654271279
+    "modified": 1654796957
 }

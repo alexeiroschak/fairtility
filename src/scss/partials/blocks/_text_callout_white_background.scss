@@ -36,7 +36,12 @@
 
             strong, b {
                 font-family: $archia-bold;
-                font-weight: bold;
+            }
+
+            hr {
+                height: 1px;
+                background: rgba($warm-black, 0.25);
+                border: none;
             }
         }
 

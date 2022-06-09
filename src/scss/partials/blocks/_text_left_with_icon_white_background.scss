@@ -9,6 +9,7 @@
     &--container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 30px 120px;
         background: $warm-white;
 
@@ -47,11 +48,7 @@
 
             &--copy {
                 max-width: 700px;
-                margin-top: 81px;
-
-                @include breakpoint($mobile) {
-                    margin-top: 60px;
-                }
+                margin-top: 30px;
 
                 p {
                     font-size: 18px;
@@ -75,10 +72,6 @@
 
             @include breakpoint($portrait) {
                 display: none;
-            }
-
-            img {
-                margin-top: 58px;
             }
         }
     }

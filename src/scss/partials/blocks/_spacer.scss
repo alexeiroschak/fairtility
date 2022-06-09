@@ -1,4 +1,10 @@
 .spacer {
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
     &--container {
         background: $warm-white;
     }

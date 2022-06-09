@@ -31,6 +31,11 @@ b, strong {
 	font-weight: 600;
 }
 
+img {
+	max-width: 100%;
+    height: auto;
+}
+
 .container {
 	position: relative;
 	max-width: 1660px + 40px * 2;
@@ -39,5 +44,19 @@ b, strong {
 
 	@include breakpoint($tablet) {
 		padding: 0 20px;
+	}
+}
+
+.desktop {
+	@include breakpoint($mobile) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@include breakpoint($mobile) {
+		display: block;
 	}
 }

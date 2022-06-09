@@ -6,7 +6,7 @@
         padding: 60px 0;
         border-bottom: 1px solid rgba($warm-white, 0.25);
 
-        @include breakpoint($portrait) {
+        @include breakpoint(1110px) {
             flex-direction: column;
         }
 
@@ -21,16 +21,24 @@
 
         &--left {
             flex: 0 0 auto;
-            padding-left: 120px;
+            margin-left: 120px;
             padding-right: 20px;
-            width: math.div(420, 1660) * 100%;
+            width: 372px;
 
-            @include breakpoint(1145px) {
-                padding-left: 0;
+            @include breakpoint(1110px) {
+                width: 100%;
+            }
+
+            @include breakpoint($tablet) {
+                margin-left: 60px;
             }
 
             @include breakpoint($portrait) {
-                width: 100%;
+                margin-left: 20px;
+            }
+
+            @include breakpoint($mobile) {
+                margin-left: 0;
             }
 
             h2 {
@@ -41,14 +49,34 @@
                 line-height: 130%;
                 color: $warm-white;
 
-                @include breakpoint($portrait) {
+                @include breakpoint(1110px) {
                     margin-bottom: 40px;
+                }
+
+                @include breakpoint($mobile) {
+                    font-size: 18px;
                 }
             }
         }
 
         &--right {
             flex: 1;
+
+            @include breakpoint(1110px) {
+                padding: 0 120px;
+            }
+
+            @include breakpoint($tablet) {
+                padding: 0 60px;
+            }
+
+            @include breakpoint($portrait) {
+                padding: 0 20px;
+            }
+
+            @include breakpoint($mobile) {
+                padding: 0;
+            }
 
             h3 {
                 margin: 0;
