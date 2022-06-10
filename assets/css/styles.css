@@ -18091,7 +18091,7 @@ p:first-child {
 
 b, strong {
   font-family: archiasemibold, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 img {
@@ -18184,8 +18184,9 @@ img {
   }
 }
 #header__notice span {
-  font-size: 12px;
   font-family: archiabold, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -18328,7 +18329,7 @@ img {
 }
 #main_nav ul li.demo a {
   font-family: archiasemibold, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 #main_nav ul li a {
   display: block;
@@ -18403,7 +18404,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 100%;
   color: #1F1F1E;
 }
@@ -18460,6 +18461,7 @@ img {
 #request_demo_flyout .gform_wrapper .gform_body .gform_fields .gfield_label {
   font-family: archiasemibold, sans-serif;
   font-size: 12px;
+  font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -18589,6 +18591,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 150%;
   color: #1F1F1E;
 }
@@ -18612,6 +18615,7 @@ img {
   height: 42px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   text-align: center;
   line-height: 0;
   color: #1F1F1E;
@@ -18700,7 +18704,7 @@ img {
   margin-top: 33px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
   text-decoration: underline;
   color: #8BC4C1;
@@ -18795,6 +18799,7 @@ img {
   max-width: 166px;
   font-family: archiasemibold, sans-serif;
   font-size: 42px;
+  font-weight: 400;
   line-height: 100%;
   color: #ECFAEC;
 }
@@ -18875,7 +18880,7 @@ img {
   padding: 20px 0 0;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   color: #ECFAEC;
   border-top: 1px solid rgba(236, 250, 236, 0.25);
@@ -18939,7 +18944,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #ECFAEC;
 }
@@ -18955,7 +18960,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #ECFAEC;
 }
@@ -18978,7 +18983,7 @@ img {
   margin-top: 15px;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -19079,6 +19084,7 @@ img {
   margin-left: 20px;
   font-family: archiabold, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -19095,6 +19101,7 @@ img {
   margin-left: 25.3012048193%;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 22px;
   color: #8BC4C1;
 }
@@ -19156,6 +19163,7 @@ img {
   margin: 0 0 60px;
   font-family: archiasemibold, sans-serif;
   font-size: 42px;
+  font-weight: 400;
   line-height: 100%;
   color: #ECFAEC;
 }
@@ -19179,7 +19187,7 @@ img {
   margin-top: 33px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
   text-decoration: underline;
   color: #8BC4C1;
@@ -19222,7 +19230,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 100%;
   color: #ECFAEC;
 }
@@ -19304,7 +19312,7 @@ img {
   margin-top: 60px;
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -19381,7 +19389,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 100%;
   color: #1F1F1E;
 }
@@ -19457,7 +19465,7 @@ img {
 .four-column-small--container .col h3 {
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 17px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -19467,7 +19475,7 @@ img {
   margin-top: 15px;
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 29px;
   color: #1F1F1E;
 }
@@ -19517,6 +19525,7 @@ img {
 }
 .text-callout--container div strong, .text-callout--container div b {
   font-family: archiabold, sans-serif;
+  font-weight: 400;
 }
 .text-callout--container div hr {
   height: 1px;
@@ -19528,7 +19537,7 @@ img {
   margin-top: 60px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
   text-decoration: underline;
   color: #009898;
@@ -19590,7 +19599,7 @@ img {
   padding-right: 20px;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -19611,7 +19620,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -19629,7 +19638,7 @@ img {
   margin-top: 15px;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -19690,7 +19699,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -19751,7 +19760,7 @@ img {
 .logo-list-with-heading--left h2 {
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 100%;
   color: #ECFAEC;
 }
@@ -19814,6 +19823,7 @@ img {
   margin: 0 0 60px;
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -19872,7 +19882,7 @@ img {
   margin: 30px 0;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   text-align: center;
   color: #ECFAEC;
@@ -19934,6 +19944,7 @@ img {
   margin: 0 auto 30px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 150%;
   color: #1F1F1E;
 }
@@ -20016,7 +20027,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 100%;
   color: #1F1F1E;
 }
@@ -20085,6 +20096,7 @@ img {
 .two-col-with-form--container--right .gform_wrapper .gform_body .gform_fields .gfield_label {
   font-family: archiasemibold, sans-serif;
   font-size: 12px;
+  font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -20214,6 +20226,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 150%;
   color: #1F1F1E;
 }
@@ -20237,6 +20250,7 @@ img {
   height: 42px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   text-align: center;
   line-height: 0;
   color: #1F1F1E;
@@ -20280,7 +20294,7 @@ img {
   margin: 0 0 81px;
   font-family: archiasemibold, sans-serif;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 100%;
   color: #1F1F1E;
 }
@@ -20350,6 +20364,7 @@ img {
 .two-col-with-form2--right .gform_wrapper .gform_body .gform_fields .gfield_label {
   font-family: archiasemibold, sans-serif;
   font-size: 12px;
+  font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -20479,6 +20494,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 150%;
   color: #1F1F1E;
 }
@@ -20502,6 +20518,7 @@ img {
   height: 42px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   text-align: center;
   line-height: 0;
   color: #1F1F1E;
@@ -20614,7 +20631,7 @@ img {
   padding-right: 20px;
   font-family: archiasemibold, sans-serif;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -20646,7 +20663,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   color: #1F1F1E;
 }
@@ -20663,7 +20680,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -20766,7 +20783,7 @@ img {
   padding-right: 20px;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -20787,7 +20804,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #1F1F1E;
 }
@@ -20805,7 +20822,7 @@ img {
   margin-top: 15px;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -20881,7 +20898,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #ECFAEC;
 }
@@ -20922,7 +20939,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%;
   color: #ECFAEC;
 }
@@ -20945,7 +20962,7 @@ img {
   margin-top: 15px;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -21085,6 +21102,7 @@ img {
   margin: 0;
   font-family: archiasemibold, sans-serif;
   font-size: 42px;
+  font-weight: 400;
   line-height: 100%;
   color: #1F1F1E;
 }
@@ -21117,7 +21135,7 @@ img {
   margin-top: 33px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
   text-decoration: underline;
   color: #8BC4C1;
@@ -21294,6 +21312,7 @@ body.careers .text-callout--container div p {
   margin-right: 195px;
   font-family: archiasemibold, sans-serif;
   font-size: 24px;
+  font-weight: 400;
   font-weight: 600;
   line-height: 100%;
   color: #ECFAEC;
@@ -21329,7 +21348,7 @@ body.careers .text-callout--container div p {
   margin-top: 40px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
   text-decoration: underline;
   color: #8BC4C1;
@@ -21463,6 +21482,7 @@ body.careers .text-callout--container div p {
   margin-bottom: 21px;
   font-family: archiasemibold, sans-serif;
   font-size: 12px;
+  font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.4em;
   color: #4B615F;
@@ -21490,7 +21510,7 @@ body.careers .text-callout--container div p {
   height: 42px;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   color: #1F1F1E;
   background: #8BC4C1;
   border: none;

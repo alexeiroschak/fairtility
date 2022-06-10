@@ -36,6 +36,7 @@
 
             strong, b {
                 font-family: $archia-bold;
+                font-weight: 400;
             }
 
             hr {
@@ -50,7 +51,7 @@
             margin-top: 60px;
             font-family: $archia-semi-bold;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 22px;
             text-decoration: underline;
             color: $dark-cyan;
