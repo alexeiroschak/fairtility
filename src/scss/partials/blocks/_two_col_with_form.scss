@@ -9,7 +9,7 @@
     &--container {
         display: flex;
         gap: 130px;
-        padding: 30px 120px;
+        padding: 50px 120px;
         background: $warm-white;
 
         @include breakpoint(1300px) {
