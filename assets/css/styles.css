@@ -18075,6 +18075,7 @@ html, body {
 h1, h2, h3, h4 {
   margin: 0;
   overflow-wrap: normal;
+  font-weight: 400;
 }
 
 a {
@@ -20633,6 +20634,10 @@ img {
 .content--content {
   max-width: 820px;
   margin: 0 auto;
+}
+.content--content h3 {
+  margin-top: 27px;
+  color: #ECFAEC;
 }
 .content--content p {
   font-size: 18px;
