@@ -71,6 +71,11 @@
                     line-height: 27px;
                 }
             }
+
+            a {
+                text-decoration: underline;
+                color: $dark-cyan;
+            }
         }
 
         &--link {

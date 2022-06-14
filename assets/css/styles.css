@@ -19204,7 +19204,6 @@ img {
 .summary--container {
   display: flex;
   padding-top: 50px;
-  border-top: 1px solid rgba(236, 250, 236, 0.25);
 }
 @media screen and (max-width: 900px) {
   .summary--container {
@@ -21129,6 +21128,10 @@ img {
 }
 .image-and-text-reverse--left--copy ul li {
   line-height: 27px;
+}
+.image-and-text-reverse--left--copy a {
+  text-decoration: underline;
+  color: #009898;
 }
 .image-and-text-reverse--left--link {
   display: inline-block;

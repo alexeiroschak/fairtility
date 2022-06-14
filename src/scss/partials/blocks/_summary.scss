@@ -4,7 +4,6 @@
     &--container {
         display: flex;
         padding-top: 50px;
-        border-top: 1px solid rgba($warm-white, 0.25);
 
         @include breakpoint($tablet) {
             flex-direction: column;
