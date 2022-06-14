@@ -12,35 +12,9 @@
     .gform_body {
         .gform_fields {
             row-gap: 30px;
-            column-gap: 0;
+            column-gap: 30px;
 
             .gfield {
-                &:nth-child(2n-1) {
-                    padding-right: 55px;
-                    padding-left: 0;
-
-                    @include breakpoint(1350px) {
-                        padding-right: 20px;
-                    }
-
-                    @include breakpoint(640px) {
-                        padding-right: 0;
-                    }
-                }
-
-                &:nth-child(2n) {
-                    padding-left: 55px;
-                    padding-right: 0;
-
-                    @include breakpoint(1350px) {
-                        padding-left: 20px;
-                    }
-
-                    @include breakpoint(640px) {
-                        padding-left: 0;
-                    }
-                }
-
                 &_label {
                     font-family: $archia-semi-bold;
                     font-size: 12px;

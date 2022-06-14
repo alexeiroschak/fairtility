@@ -57,24 +57,6 @@
             .gform_body {
                 .gform_fields {
                     .gfield {
-                        &:nth-child(2n) {
-                            padding-right: 55px;
-                            padding-left: 0;
-
-                            @include breakpoint(640px) {
-                                padding-right: 0;
-                            }
-                        }
-        
-                        &:nth-child(2n-1) {
-                            padding-left: 55px;
-                            padding-right: 0;
-
-                            @include breakpoint(640px) {
-                                padding-left: 0;
-                            }
-                        }
-
                         &_label {
                             color: $warm-white;
                         }

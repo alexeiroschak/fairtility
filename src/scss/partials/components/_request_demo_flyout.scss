@@ -60,6 +60,8 @@
     
         .gform_body {
             .gform_fields {
+                column-gap: 0;
+
                 .gfield {
                     &_radio {
                         display: flex;
