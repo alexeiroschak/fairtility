@@ -24,6 +24,7 @@
         &--left {
             flex: 0 0 auto;
             width: math.div(780, 1420) * 100%;
+            padding-right: 20px;
 
             @include breakpoint(1120px) {
                 width: 70%;
@@ -68,7 +69,7 @@
         }
 
         &--right {
-            flex: 0 0 auto;
+            flex: 1;
 
             @include breakpoint($portrait) {
                 display: none;

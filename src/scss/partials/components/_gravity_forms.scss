@@ -38,6 +38,10 @@
                     display: flex;
                     gap: 30px;
 
+                    @include breakpoint($portrait) {
+                        flex-direction: column;
+                    }
+
                     .gchoice {
                         flex: 0 0 auto;
 

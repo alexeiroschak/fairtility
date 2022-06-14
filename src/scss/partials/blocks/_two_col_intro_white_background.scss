@@ -24,6 +24,7 @@
         &--left {
             flex: 0 0 auto;
             width: 280px;
+            padding-right: 20px;
 
             @include breakpoint($portrait) {
                 width: 100%;

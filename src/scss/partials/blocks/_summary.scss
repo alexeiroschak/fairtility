@@ -17,6 +17,7 @@
 
         &--left {
             width: math.div(420, 1660) * 100%;
+            padding-right: 20px;
 
             @include breakpoint($tablet) {
                 width: 100%;
