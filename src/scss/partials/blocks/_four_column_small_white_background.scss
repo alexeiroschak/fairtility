@@ -9,7 +9,7 @@
     &--container {
         display: flex;
         gap: math.div(100, 1420) * 100%;
-        padding: 50px 120px;
+        padding: 100px 120px;
         background: $warm-white;
 
         @include breakpoint(1100px) {

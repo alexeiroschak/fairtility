@@ -1,9 +1,9 @@
 {
-    "key": "group_629919f8af432",
-    "title": "Block - Content (White Background)",
+    "key": "group_627d538676b7c",
+    "title": "Block - Content",
     "fields": [
         {
-            "key": "field_62991a193321a",
+            "key": "field_627d53940db6b",
             "label": "Content",
             "name": "content",
             "type": "wysiwyg",
@@ -27,7 +27,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/content2"
+                "value": "acf\/content"
             }
         ]
     ],
@@ -40,5 +40,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655216105
+    "modified": 1655216086
 }

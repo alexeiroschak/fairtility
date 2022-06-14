@@ -9,7 +9,7 @@
     &--container {
         display: flex;
         justify-content: space-between;
-        padding: 50px 120px;
+        padding: 100px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
