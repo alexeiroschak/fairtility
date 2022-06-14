@@ -20661,6 +20661,9 @@ img {
     font-size: 16px;
   }
 }
+.content--content iframe {
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
   .article-listing .container {
