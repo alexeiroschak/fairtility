@@ -19244,7 +19244,7 @@ img {
 }
 .two-column-white-background--container {
   display: flex;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19329,7 +19329,7 @@ img {
   }
 }
 .full-width-image--container {
-  padding: 100px 20px;
+  padding: 30px 20px;
   background: #ECFAEC;
 }
 .full-width-image--container--image {
@@ -19346,7 +19346,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19422,7 +19422,7 @@ img {
 .four-column-small--container {
   display: flex;
   gap: 7.0422535211%;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 1100px) {
@@ -19481,7 +19481,7 @@ img {
   }
 }
 .text-callout--container {
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19544,7 +19544,7 @@ img {
   }
 }
 .two-col-center-stack-white-bg--container {
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19661,7 +19661,7 @@ img {
 .two-col-intro--container {
   display: flex;
   justify-content: space-between;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19785,7 +19785,7 @@ img {
 .two-col-content--container {
   display: flex;
   gap: 140px;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19909,7 +19909,7 @@ img {
   }
 }
 .content-list--container {
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -19987,7 +19987,7 @@ img {
 .two-col-with-form--container {
   display: flex;
   gap: 130px;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 1300px) {
@@ -20531,7 +20531,7 @@ img {
 .listing-with-headline--container {
   display: flex;
   justify-content: space-between;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 1320px) {
@@ -20932,7 +20932,7 @@ img {
   }
 }
 .content-white-background--container {
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
@@ -21021,7 +21021,7 @@ img {
 }
 .image-and-text-reverse--container {
   display: flex;
-  padding: 100px 120px;
+  padding: 30px 120px;
   background: #ECFAEC;
 }
 @media screen and (max-width: 900px) {
