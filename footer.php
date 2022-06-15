@@ -43,8 +43,8 @@
 						<div class="col">
 							<span>CONNECT</span>
 							<ul class="socials">
-								<li><a href="https://www.linkedin.com/company/fairtility/"><span class="fab fa-linkedin-in"></span></a></li>
-								<li><a href="https://twitter.com/fairtility"><span class="fab fa-twitter"></span></a></li>
+								<li><a href="https://www.linkedin.com/company/fairtility/" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+								<li><a href="https://twitter.com/fairtility" target="_blank"><span class="fab fa-twitter"></span></a></li>
 							</ul>
 						</div>
 					</div>
