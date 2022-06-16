@@ -307,5 +307,14 @@ add_action('acf/init', function() {
             'mode' => 'edit',
             'render_template' => 'templates/blocks/full-width-image2.php'
         ]);
+
+        acf_register_block_type([
+            'name' => 'hero-video',
+            'title' => __('Hero with Video'),
+            'description' => __('Hero with Video Block'),
+            'keywords' => [ 'hero', 'video' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/hero-video.php'
+        ]);
     }
 });
