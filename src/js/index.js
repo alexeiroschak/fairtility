@@ -1,8 +1,11 @@
 import $ from 'jquery'
 import 'select2'
 
+let player
+
 function init() {
     setUpEventListeners()
+    setUpYoutubeAPI()
 }
 
 function setUpEventListeners() {
@@ -11,6 +14,14 @@ function setUpEventListeners() {
     $('#request_demo_flyout__close_button').on('click', events.onDemoFlyoutCloseButtonClick)
     $('#header__hamburger').on('click', events.onHeaderHamburgerClick)
     $('#main_nav__header__close').on('click', events.onMainNavHeaderClose)
+    $('.hero-alt--left--watch-button').on('click', events.onHeroAltLeftWatchButtonClick)
+    $('.hero-alt--modal--window--close').on('click', events.onHeroAltModalWindowCloseButtonClick)
+}
+
+function setUpYoutubeAPI() {
+    window.onYouTubeIframeAPIReady = () => {
+        player = new YT.Player('hero_alt_modal_video', {});
+    }
 }
 
 function setUpSelects() {
@@ -49,6 +60,21 @@ const events = {
         const nav = $('#main_nav')
 
         nav.removeClass('open')
+    },
+    onHeroAltLeftWatchButtonClick(e) {
+        const btn = $(e.target)
+        const block = btn.closest('.block')
+        const modal = block.find('.hero-alt--modal')
+
+        modal.addClass('show')
+        player.playVideo()
+    },
+    onHeroAltModalWindowCloseButtonClick(e) {
+        const btn = $(e.target)
+        const modal = btn.closest('.hero-alt--modal')
+
+        modal.removeClass('show')
+        player.stopVideo()
     }
 }
 
