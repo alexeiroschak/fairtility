@@ -19935,6 +19935,7 @@ img {
   margin: 48px 70px;
 }
 .bio-list--bios--bio--image {
+  display: block;
   width: 280px;
   height: 280px;
   background-color: rgba(236, 250, 236, 0.2);

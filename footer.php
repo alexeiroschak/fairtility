@@ -1,3 +1,6 @@
+		<?php
+			$footer_copyright_contact_info = get_field('footer_copyright_contact_info', 'option');
+		?>
 		<footer id="footer">
 			<div class="container">
 				<img id="footer__wedges" src="<?= get_template_directory_uri() ?>/assets/img/wedges.svg">
@@ -19,7 +22,7 @@
 						<a id="footer__bottom__left__logo" href="/">
 							<img src="<?= get_template_directory_uri() ?>/assets/img/logo-footer.svg" alt="Fairtility">
 						</a>
-						<p>&copy; <?= date('Y') ?> Fairtility. All rights reserved. <a href="/privacy-policy">Privacy policy</a>.</p>
+						<?= $footer_copyright_contact_info['copyright'] ?>
 					</div>
 					<div id="footer__bottom__right">
 						<div class="col">
@@ -32,13 +35,7 @@
 						</div>
 						<div class="col">
 							<span>CONTACT</span>
-							<p>
-								Headquarters<br>
-								Magshimim, Israel<br>
-								<br>
-								info@fairtility.com<br>
-								+972 3-932-8360
-							</p>
+							<?= $footer_copyright_contact_info['contact_info'] ?>
 						</div>
 						<div class="col">
 							<span>CONNECT</span>
