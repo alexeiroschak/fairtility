@@ -18748,6 +18748,11 @@ img {
   line-height: 100%;
   color: #ECFAEC;
 }
+@media screen and (max-width: 1384px) {
+  .hero-alt--left h1 {
+    bottom: 114px;
+  }
+}
 @media screen and (max-width: 600px) {
   .hero-alt--left h1 {
     font-size: 36px;
@@ -18769,6 +18774,13 @@ img {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.4s;
+}
+@media screen and (max-width: 600px) {
+  .hero-alt--left--watch-button {
+    width: 160px;
+    height: 34px;
+    font-size: 14px;
+  }
 }
 .hero-alt--left--watch-button:hover {
   background: #EA2F00;
