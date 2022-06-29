@@ -36,6 +36,11 @@
                 @include breakpoint($mobile) {
                     font-size: 16px;
                 }
+
+                a {
+                    text-decoration: underline;
+                    color: $chloe-teal;
+                }
             }
         }
 
