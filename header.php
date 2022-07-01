@@ -6,17 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="<?= get_template_directory_uri() ?>/assets/img/favicon.png" type="image/png">
 		<?php wp_head(); ?>
-
-		<!--  Hubspot Form Integration -->
-		<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js"></script>
-		<script>
-			hbspt.forms.create({
-				region: "eu1",
-				portalId: "25901046",
-				formId: "0d1740e3-8726-4cdf-9779-15b03616f5c0"
-			});
-		</script>
-		<!--  End Hubspot Form Integration -->
 	</head>
 	<body <?php body_class( get_page_slug() ); ?>>
 
