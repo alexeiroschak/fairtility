@@ -247,11 +247,74 @@ add_action('acf/init', function() {
 
         acf_register_block_type([
             'name' => 'content2',
-            'title' => __('Content (White Background)'),
-            'description' => __('Content (White Background) Block'),
-            'keywords' => [ 'content' ],
+            'title' => __('Full-Width Content (White Background)'),
+            'description' => __('Full-Width Content (White Background) Block'),
+            'keywords' => [ 'content', 'full', 'width' ],
             'mode' => 'edit',
             'render_template' => 'templates/blocks/content-white-background.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'spacer',
+            'title' => __('Spacer (White Background)'),
+            'description' => __('Spacer (White Background) Block'),
+            'keywords' => [ 'space', 'spacer' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/spacer.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'separator',
+            'title' => __('Horizontal Rule'),
+            'description' => __('Horizontal Rule'),
+            'keywords' => [ 'horizontal', 'rule' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/separator.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'separator2',
+            'title' => __('Horizontal Rule (White Background)'),
+            'description' => __('Horizontal Rule (White Background)'),
+            'keywords' => [ 'horizontal', 'rule' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/separator-white-background.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'image-and-text-reverse',
+            'title' => __('Image and Text Reverse (White Background)'),
+            'description' => __('Image and Text Reverse (White Background)'),
+            'keywords' => [ 'image', 'text', 'reverse' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/image-and-text-reverse-white-background.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'full-width-image-alt',
+            'title' => __('Full-Width Image Alt. (White Background)'),
+            'description' => __('Full-Width Image Alt. (White Background)'),
+            'keywords' => [ 'image', 'full', 'width' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/full-width-image-alt-white-background.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'full-width-image2',
+            'title' => __('Full-Width Image'),
+            'description' => __('Full-Width Image'),
+            'keywords' => [ 'full', 'width', 'image' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/full-width-image2.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'hero-video',
+            'title' => __('Hero with Video'),
+            'description' => __('Hero with Video Block'),
+            'keywords' => [ 'hero', 'video' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/hero-video.php'
         ]);
     }
 });

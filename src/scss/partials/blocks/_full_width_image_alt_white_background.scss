@@ -1,0 +1,18 @@
+.full-width-image-alt {
+
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        padding: 100 20px;
+        background: $warm-white;
+
+        &--image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

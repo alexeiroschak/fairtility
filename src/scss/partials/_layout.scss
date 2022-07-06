@@ -11,6 +11,8 @@ html, body {
 h1, h2, h3, h4 {
 	margin: 0;
 	overflow-wrap: normal;
+	font-family: $archia-bold;
+	font-weight: 400;
 }
 
 a {
@@ -18,12 +20,22 @@ a {
 }
 
 p {
-	margin: 0;
+	margin-top: 27px;
+	margin-bottom: 0;
+	
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 b, strong {
 	font-family: $archia-semi-bold;
-	font-weight: 600;
+	font-weight: 400;
+}
+
+img {
+	max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -34,5 +46,19 @@ b, strong {
 
 	@include breakpoint($tablet) {
 		padding: 0 20px;
+	}
+}
+
+.desktop {
+	@include breakpoint($mobile) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@include breakpoint($mobile) {
+		display: block;
 	}
 }

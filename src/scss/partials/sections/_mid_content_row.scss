@@ -1,0 +1,44 @@
+#mid_content_row {
+    .image-and-text-reverse {
+        &--left {
+            &--copy {
+                .row {
+                    display: flex;
+                
+                    .col {
+                        flex: 0 0 auto;
+                        width: 50%;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: $warm-black;
+
+                        strong {
+                            font-size: 70px;
+
+                            sup {
+                                top: -30px;
+                                font-size: 35px;
+                            }
+                        }
+
+                        .arrow-down, .arrow-up {
+                            display: inline-block;
+                            width: 24px;
+                            height: 50px;
+                            margin-left: 10px;
+                            background: url(../img/arrow-down-teal.svg) no-repeat;
+                        }
+
+                        .arrow-up {
+                            background-image: url(../img/arrow-up-orange.svg);
+                        }
+
+                        p {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

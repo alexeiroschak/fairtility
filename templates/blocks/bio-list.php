@@ -7,7 +7,11 @@
                 foreach ($bios as $bio) :
             ?>
                 <div class="bio-list--bios--bio">
-                    <div class="bio-list--bios--bio--image" style="background-image:url(<?= $bio['image'] ?>)"></div>
+                    <?php  if ($bio['link']) : ?>
+                        <a href="<?= $bio['link'] ?>" target="_blank" class="bio-list--bios--bio--image" style="background-image:url(<?= $bio['image'] ?>)"></a>
+                    <?php else : ?>
+                        <div class="bio-list--bios--bio--image" style="background-image:url(<?= $bio['image'] ?>)"></div>
+                    <?php endif ?>
                     <h3><?= $bio['name'] ?></h3>
                     <p><?= $bio['title'] ?></p>
                 </div>

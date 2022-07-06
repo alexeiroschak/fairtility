@@ -1,0 +1,44 @@
+{
+    "key": "group_62a22cfb1fe11",
+    "title": "Post Fields",
+    "fields": [
+        {
+            "key": "field_62a22d364ad90",
+            "label": "External Link",
+            "name": "external_link",
+            "type": "text",
+            "instructions": "Use this field to specify an external link for this post. When clicked on the site, the user will open this link instead of viewing internal content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1654796957
+}

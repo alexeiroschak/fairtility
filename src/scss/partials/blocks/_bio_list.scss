@@ -1,11 +1,11 @@
 .bio-list {
-    padding: 97px 0;
+    padding: 30px 0;
 
     h2 {
         margin: 0 0 89px;
         font-family: $archia-semi-bold;
         font-size: 42px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 100%;
         text-align: center;
         color: $warm-white;
@@ -27,6 +27,7 @@
             margin: 48px 70px;
 
             &--image {
+                display: block;
                 width: 280px;
                 height: 280px;
                 background-color: rgba($warm-white, 0.2);
@@ -39,7 +40,7 @@
                 margin: 30px 0;
                 font-family: $archia-semi-bold;
                 font-size: 18px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 150%;
                 text-align: center;
                 color: $warm-white;

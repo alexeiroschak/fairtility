@@ -17,8 +17,8 @@
             },
             "default_value": "",
             "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
+            "toolbar": "full",
+            "media_upload": 1,
             "delay": 0
         }
     ],
@@ -40,5 +40,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654200879
+    "modified": 1655216105
 }

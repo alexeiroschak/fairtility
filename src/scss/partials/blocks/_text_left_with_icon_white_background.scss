@@ -9,24 +9,22 @@
     &--container {
         display: flex;
         justify-content: space-between;
-        padding: 60px 120px;
+        align-items: center;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px;
         }
 
         @include breakpoint($portrait) {
-            padding: 60px 20px;
-        }
-
-        @include breakpoint($mobile) {
             padding: 30px 20px;
         }
 
         &--left {
             flex: 0 0 auto;
             width: math.div(780, 1420) * 100%;
+            padding-right: 20px;
 
             @include breakpoint(1120px) {
                 width: 70%;
@@ -40,7 +38,7 @@
                 margin: 0;
                 font-family: $archia-semi-bold;
                 font-size: 60px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 100%;
                 color: $warm-black;
 
@@ -51,11 +49,7 @@
 
             &--copy {
                 max-width: 700px;
-                margin-top: 81px;
-
-                @include breakpoint($mobile) {
-                    margin-top: 60px;
-                }
+                margin-top: 30px;
 
                 p {
                     font-size: 18px;
@@ -75,14 +69,10 @@
         }
 
         &--right {
-            flex: 0 0 auto;
+            flex: 1;
 
             @include breakpoint($portrait) {
                 display: none;
-            }
-
-            img {
-                margin-top: 58px;
             }
         }
     }

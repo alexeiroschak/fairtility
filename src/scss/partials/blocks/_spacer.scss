@@ -1,0 +1,21 @@
+.spacer {
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        background: $warm-white;
+
+        @include breakpoint($mobile) {
+            height: 30px !important;
+        }
+    }
+}
+
+.wp-block-spacer {
+    @include breakpoint($mobile) {
+        height: 30px !important;
+    }
+}

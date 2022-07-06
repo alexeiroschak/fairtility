@@ -1,5 +1,5 @@
 .two-col-with-form2 {
-    padding: 97px 0;
+    padding: 30px 0;
 
     .container {
         display: flex;
@@ -21,14 +21,13 @@
             margin: 0 0 81px;
             font-family: $archia-semi-bold;
             font-size: 60px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 100%;
             color: $warm-black;
         }
 
         &--copy {
             p {
-                margin-top: 27px;
                 font-size: 18px;
                 line-height: 150%;
                 color: $warm-white;
@@ -58,24 +57,6 @@
             .gform_body {
                 .gform_fields {
                     .gfield {
-                        &:nth-child(2n) {
-                            padding-right: 55px;
-                            padding-left: 0;
-
-                            @include breakpoint(640px) {
-                                padding-right: 0;
-                            }
-                        }
-        
-                        &:nth-child(2n-1) {
-                            padding-left: 55px;
-                            padding-right: 0;
-
-                            @include breakpoint(640px) {
-                                padding-left: 0;
-                            }
-                        }
-
                         &_label {
                             color: $warm-white;
                         }

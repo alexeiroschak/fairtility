@@ -9,7 +9,7 @@
     &--container {
         display: flex;
         gap: 130px;
-        padding: 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint(1300px) {
@@ -17,11 +17,11 @@
         }
 
         @include breakpoint(1200px) {
-            padding: 120px 60px;
+            padding: 30px 60px;
         }
 
         @include breakpoint(1100px) {
-            padding: 60px 20px;
+            padding: 30px 20px;
         }
 
         @include breakpoint($tablet) {
@@ -35,7 +35,7 @@
                 margin: 0;
                 font-family: $archia-semi-bold;
                 font-size: 60px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 100%;
                 color: $warm-black;
             }

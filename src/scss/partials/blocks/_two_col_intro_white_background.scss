@@ -9,11 +9,11 @@
     &--container {
         display: flex;
         justify-content: space-between;
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px 60px;
         }
 
         @include breakpoint($portrait) {
@@ -24,6 +24,7 @@
         &--left {
             flex: 0 0 auto;
             width: 280px;
+            padding-right: 20px;
 
             @include breakpoint($portrait) {
                 width: 100%;
@@ -33,7 +34,7 @@
                 margin: 0;
                 font-family: $archia-semi-bold;
                 font-size: 36px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 130%;
                 color: $warm-black;
 

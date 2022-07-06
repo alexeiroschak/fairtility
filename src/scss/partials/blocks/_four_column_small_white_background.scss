@@ -9,7 +9,7 @@
     &--container {
         display: flex;
         gap: math.div(100, 1420) * 100%;
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint(1100px) {
@@ -18,14 +18,10 @@
         }
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px 60px;
         }
 
         @include breakpoint($portrait) {
-            padding: 60px 20px;
-        }
-
-        @include breakpoint($mobile) {
             padding: 30px 20px;
         }
 
@@ -41,7 +37,7 @@
             h3 {
                 font-family: $archia-semi-bold;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 17px;
                 letter-spacing: 0.4em;
                 text-transform: uppercase;
@@ -52,7 +48,7 @@
                 margin-top: 15px;
                 font-family: $archia-semi-bold;
                 font-size: 24px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 29px;
                 color: $warm-black;
 

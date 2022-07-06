@@ -1,0 +1,11 @@
+body.chloe {
+    .hero {
+        @include breakpoint(1150px) {
+            height: 900px;
+        }
+
+        @include breakpoint($tablet) {
+            height: auto;
+        }
+    }
+}

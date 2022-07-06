@@ -6,11 +6,11 @@
     }
 
     &--container {
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px 60px;
         }
 
         @include breakpoint($portrait) {
@@ -19,11 +19,15 @@
     }
 
     &--content {
-        max-width: 820px;
         margin: 0 auto;
 
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
         p {
-            margin-top: 27px;
             font-size: 18px;
             line-height: 150%;
             color: $warm-black;
@@ -31,6 +35,11 @@
             @include breakpoint($mobile) {
                 font-size: 16px;
             }
+        }
+
+        a {
+            text-decoration: underline;
+            color: $dark-cyan;
         }
     }
 }

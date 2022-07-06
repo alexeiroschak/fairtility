@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title><?php the_title(); ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="<?= get_template_directory_uri() ?>/assets/img/favicon.png" type="image/png">
 		<?php wp_head(); ?>
 	</head>
@@ -40,7 +41,9 @@
 
 		<nav id="main_nav" class="container">
 			<div id="main_nav__header">
-				<img src="<?= get_template_directory_uri() ?>/assets/img/logo-black.svg" alt="Fairtility">
+				<a href="/">
+					<img src="<?= get_template_directory_uri() ?>/assets/img/logo-black.svg" alt="Fairtility">
+				</a>
 				<button id="main_nav__header__close">
 					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M1.41421 0L22.6274 21.2132L21.2132 22.6274L9.27258e-07 1.41421L1.41421 0Z" fill="#009898"/>
