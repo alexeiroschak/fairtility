@@ -5,18 +5,20 @@
 			<div class="container">
 				<img id="footer__wedges" src="<?= get_template_directory_uri() ?>/assets/img/wedges.svg">
 				<img id="footer__wedges_mobile" src="<?= get_template_directory_uri() ?>/assets/img/wedges-mobile.svg">
-				<div id="footer__middle">
-					<?php
-						$footer = get_field('global_footer', 'option');
-					?>
-					<div id="footer__middle__left"><?= $footer['headline'] ?></div>
-					<div id="footer__middle__right">
-						<?= $footer['copy'] ?>
-						<?php if (!empty($footer['link_text'])) : ?>
-							<a href="<?= $footer['link_url'] ?>" id="footer__middle__right__cta"><?= $footer['link_text'] ?></a>
-						<?php endif ?>
+				<?php if (!is_page('demo')) : ?>
+					<div id="footer__middle">
+						<?php
+							$footer = get_field('global_footer', 'option');
+						?>
+						<div id="footer__middle__left"><?= $footer['headline'] ?></div>
+						<div id="footer__middle__right">
+							<?= $footer['copy'] ?>
+							<?php if (!empty($footer['link_text'])) : ?>
+								<a href="<?= $footer['link_url'] ?>" id="footer__middle__right__cta"><?= $footer['link_text'] ?></a>
+							<?php endif ?>
+						</div>
 					</div>
-				</div>
+				<?php endif ?>
 				<div id="footer__bottom">
 					<div id="footer__bottom__left">
 						<a id="footer__bottom__left__logo" href="/">
