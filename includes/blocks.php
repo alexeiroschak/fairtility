@@ -244,6 +244,15 @@ add_action('acf/init', function() {
             'mode' => 'edit',
             'render_template' => 'templates/blocks/article-listing2.php'
         ]);
+        
+        acf_register_block_type([
+            'name' => 'ai-academy-listing',
+            'title' => __('AI Academy Listing'),
+            'description' => __('AI Academy Listing'),
+            'keywords' => [ 'AI Academy', 'list' ],
+            'mode' => 'edit',
+            'render_template' => 'templates/blocks/ai-academy-listing.php'
+        ]);
 
         acf_register_block_type([
             'name' => 'content2',
