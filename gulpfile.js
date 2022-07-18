@@ -87,5 +87,4 @@ function watchJS(cb) {
     cb()
 }
 
-// exports.default = parallel( watchCSS, watchJS )
-exports.default = parallel( watchCSS )
+exports.default = parallel( watchCSS, watchJS )
