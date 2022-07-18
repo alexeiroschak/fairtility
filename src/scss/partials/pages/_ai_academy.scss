@@ -1,0 +1,23 @@
+.ai-academy {
+   .hero-headline {
+      .container {
+         h1 {
+            padding: 24px 0;
+         }
+      }
+   }
+
+   #ai-academy-intro-text {
+      .container {
+         .content--content {
+            max-width: 100%;
+
+            p {
+               font-size: 20px;
+               line-height: 24px;
+               text-align: center;
+            }
+         }
+      }
+   }
+}

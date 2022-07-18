@@ -5,7 +5,8 @@
             $category = get_field('category');
             $query = new WP_Query([
                 'post_type' => 'post',
-                'category_name' => $category->slug
+                'category_name' => $category->slug,
+                
             ]);
 
             $count = 0;

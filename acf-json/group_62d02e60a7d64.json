@@ -4,9 +4,9 @@
     "fields": [
         {
             "key": "field_62d02e60b7219",
-            "label": "Category",
-            "name": "category",
-            "type": "taxonomy",
+            "label": "AI Academy Posts",
+            "name": "ai_academy_posts",
+            "type": "relationship",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -15,14 +15,19 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "category",
-            "field_type": "select",
-            "allow_null": 0,
-            "add_term": 1,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "object",
-            "multiple": 0
+            "post_type": [
+                "academy"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
         }
     ],
     "location": [
@@ -43,5 +48,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657810727
+    "modified": 1657917859
 }

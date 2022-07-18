@@ -1,30 +1,36 @@
 <section id="<?= get_field('section_id') ?>" class="block ai-academy-listing">
-    <div class="container">
-        <?php
-            $category = get_field('category');
-            $query = new WP_Query([
-                'post_type' => 'post',
-                'category_name' => $category->slug
-            ]);
-
-            $count = 0;
-            if ($query->have_posts()) :
-                while ($query->have_posts()) :
-                    $query->the_post();
-        ?>
-            <div class="article-listing2--row">
-                <div class="article-listing2--row--right">
-                    <?php if (get_field('external_link', get_the_ID())) : ?>
-                        <h3><a href="<?= get_field('external_link', get_the_ID()) ?>" target="_blank"><?php the_title() ?></a></h3>
-                    <?php else : ?>
-                        <h3><a href="<?= get_permalink() ?>"><?php the_title() ?></a></h3>
-                    <?php endif ?>
-                    <span><?= get_the_date('j F Y') ?></span>
-                    <div class="article-listing2--row--right--copy">
-                        <p><?= get_the_excerpt() ?></p>
-                    </div>
-                </div>
-            </div>
-        <?php $count++; endwhile; wp_reset_postdata(); endif ?>
-    </div>
+   <?php
+      $posts = get_field('ai_academy_posts');
+      if( $posts ): 
+   ?>
+      <div class="container">
+         <?php foreach( $posts as $post ): 
+            $permalink = get_permalink( $post->ID );
+            $image = get_field('thumbnail_image', $post->ID);
+            $title = get_the_title( $post->ID );
+            $custom_field = get_field( 'short_description', $post->ID );
+            $categories = get_the_category( $post->ID );
+         ?>
+            <a class="listing" href="<?php echo esc_url( $permalink ); ?>">
+               <div class="img bg-img" style="background-image:url(<?= $image ?>)"></div>
+               <div class="description">
+                  <div class="category">
+                     <?php 
+                        if ( ! empty( $categories ) ) {
+                           echo esc_html( $categories[0]->name );   
+                        }
+                     ?>
+                  </div>
+               
+                  <div class="title">
+                     <?php echo esc_html( $title ); ?>
+                  </div>
+                  <div class="excerpt">
+                     <?php echo esc_html( $custom_field ); ?>
+                  </div>
+               </div>
+            </a>
+         <?php endforeach; ?>
+      </div>
+   <?php endif; ?>
 </section>
