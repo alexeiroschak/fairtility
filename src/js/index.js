@@ -6,6 +6,8 @@ let player
 function init() {
    setUpEventListeners()
    setUpYoutubeAPI()
+
+   setUpAiAcademyPrevNextNav();   
 }
 
 function setUpEventListeners() {
@@ -16,7 +18,6 @@ function setUpEventListeners() {
    $('#main_nav__header__close').on('click', events.onMainNavHeaderClose);
    $('.hero-alt--left--watch-button').on('click', events.onHeroAltLeftWatchButtonClick);
    $('.hero-alt--modal--window--close').on('click', events.onHeroAltModalWindowCloseButtonClick);
-
 
    $(".ai-academy.socials a").on('click', events.onAiAcademySocialButtonClick);
    $("i.social-click").on('click', events.onAiAcademySocialIconClick);
@@ -105,11 +106,21 @@ const events = {
    }
 }
 
+function setUpAiAcademyPrevNextNav() {
+   var postsCount = $('.listing').length;
+
+   if(postsCount >= 30) {
+      $('#ai-academy-prev-next-nav').addClass('active');
+   }else{
+      $('#ai-academy-prev-next-nav').removeClass('active');
+   }
+}
+
 const copyToClipboardAsync = str => {
-   // $('.tooltip').addClass('show');
-   // setTimeout(function() {
-      // $('.tooltip').removeClass('show');
-   // }, 1000);
+   $('.tooltip').addClass('show');
+   setTimeout(function() {
+      $('.tooltip').removeClass('show');
+   }, 1000);
    
    if (navigator && navigator.clipboard && navigator.clipboard.writeText)
    return navigator.clipboard.writeText(str);

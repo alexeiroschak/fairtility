@@ -8,7 +8,7 @@
             $permalink = get_permalink( $post->ID );
             $image = get_field('thumbnail_image', $post->ID);
             $title = get_the_title( $post->ID );
-            $custom_field = get_field( 'short_description', $post->ID );
+            $description = get_field( 'short_description', $post->ID );
             $categories = get_the_category( $post->ID );
          ?>
             <a class="listing" href="<?php echo esc_url( $permalink ); ?>">
@@ -26,11 +26,21 @@
                      <?php echo esc_html( $title ); ?>
                   </div>
                   <div class="excerpt">
-                     <?php echo esc_html( $custom_field ); ?>
+                     <?php echo esc_html( $description ); ?>
                   </div>
                </div>
             </a>
          <?php endforeach; ?>
+      </div>
+
+      <div id="ai-academy-prev-next-nav">
+         <div class="btn">
+            Prev
+         </div>                                 
+         <div class="divider"></div>
+         <div class="btn">
+            Next
+         </div>                                 
       </div>
    <?php endif; ?>
 </section>

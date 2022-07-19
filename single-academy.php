@@ -21,7 +21,7 @@
 </div>
 
 <div class="container post">
-   <img src="<?= get_field('hero_image') ?>" alt="">
+   <div class="hero img bg-img" style="background-image:url(<?= get_field('hero_image') ?>)"></div>
 
    <div class="content">
       <?php the_content() ?>
@@ -36,6 +36,7 @@
          <div class="title">Share:</div>
          <div class="ai-academy-copy-link">
             <i class="fas fa-link"></i>
+            <span class="tooltip">Link Copied</span>
          </div>
          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?= $share_url ?>" target="_blank">
             <i class="fab fa-linkedin-in social-click"></i>

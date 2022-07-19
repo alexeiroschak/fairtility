@@ -3,7 +3,7 @@
 function create_academy_posttype() {
     register_post_type( 'academy',
     array(
-        'labels' => array(
+         'labels' => array(
             'name'          =>  'AI Academy',
             'singular_name' =>  'Academy Post',
             'menu_name'     =>  'AI Academy',
@@ -11,11 +11,13 @@ function create_academy_posttype() {
             'add_new'       =>  'Add Post',
             'add_new_item'  =>  'Add Post'
             ),
-        'public' => true,
-        'show_in_admin_bar' =>  true,
-        'menu_icon' => 'dashicons-admin-page',
-        'supports' => array( 'title', 'editor', 'revisions'),
-        'taxonomies' => array('category', 'post_tag'),
+         'show_in_rest' => true,
+         'supports' => array('editor'),
+         'public' => true,
+         'show_in_admin_bar' =>  true,
+         'menu_icon' => 'dashicons-admin-page',
+         'supports' => array( 'title', 'editor', 'revisions'),
+         'taxonomies' => array('category', 'post_tag'),
       )
    );
 }

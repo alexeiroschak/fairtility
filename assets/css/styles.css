@@ -20823,6 +20823,28 @@ img {
     font-size: 16px;
   }
 }
+.ai-academy-listing #ai-academy-prev-next-nav {
+  display: none;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 70px;
+}
+.ai-academy-listing #ai-academy-prev-next-nav.active {
+  display: flex;
+}
+.ai-academy-listing #ai-academy-prev-next-nav .btn {
+  color: #8BC4C1;
+  font-family: archiasemibold, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.ai-academy-listing #ai-academy-prev-next-nav .divider {
+  border: 1px solid #ECFAEC;
+  opacity: 0.25;
+}
 
 @media screen and (max-width: 600px) {
   .article-listing .container {
@@ -21428,6 +21450,9 @@ body.careers .text-callout--container div p {
   line-height: 24px;
   text-align: center;
 }
+.ai-academy footer#footer {
+  margin-top: 80px;
+}
 
 .single-academy .category {
   color: #8BC4C1;
@@ -21447,12 +21472,22 @@ body.careers .text-callout--container div p {
 }
 .single-academy .container.post {
   background-color: #ECFAEC;
+  max-width: 1660px;
   padding: 20px;
+}
+.single-academy .container.post .img.bg-img.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 .single-academy .container.post .content {
   margin: 0 auto;
   max-width: 820px;
   width: 100%;
+}
+.single-academy .container.post .content .block.content .container .content--content p {
+  color: #1F1F1E;
 }
 .single-academy .container.post .footer {
   border-top: 1px solid rgba(31, 31, 30, 0.3);
@@ -21485,6 +21520,29 @@ body.careers .text-callout--container div p {
   color: #009898;
   cursor: pointer;
   font-size: 24px;
+}
+.single-academy .container.post .footer .socials a .tooltip,
+.single-academy .container.post .footer .socials .ai-academy-copy-link .tooltip {
+  background-color: #1F1F1E;
+  border-radius: 5px;
+  color: #ECFAEC;
+  font-family: archiasemibold, sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  margin-left: -42px;
+  margin-top: -23px;
+  opacity: 0;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s;
+  visibility: hidden;
+  width: 75px;
+}
+.single-academy .container.post .footer .socials a .tooltip.show,
+.single-academy .container.post .footer .socials .ai-academy-copy-link .tooltip.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 #footer {

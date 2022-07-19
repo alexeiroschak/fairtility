@@ -1,5 +1,4 @@
 .ai-academy-listing {
-
    .container {
       display: grid;
       gap: 20px;
@@ -63,6 +62,32 @@
                }
             }
          }
+      }
+
+   }
+   
+   #ai-academy-prev-next-nav {
+      display: none;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 70px;
+
+      &.active {
+         display: flex;
+      }
+
+      .btn {
+         color: $chloe-teal;
+         font-family: $archia-semi-bold;
+         font-size: 18px;
+         font-weight: 600;
+         line-height: 22px;
+         text-decoration-line: underline;
+      }
+
+      .divider {
+         border: 1px solid $warm-white;
+         opacity: 0.25;
       }
    }
 }
