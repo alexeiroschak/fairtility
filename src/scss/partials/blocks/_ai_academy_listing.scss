@@ -2,7 +2,7 @@
    .container {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
       padding: 10px;
       padding: 24px 20px;
       justify-content: start;
@@ -33,7 +33,7 @@
                display: inline-block;
                font-family: $archia-semi-bold;
                font-size: 14px;
-               font-weight: 600;
+               font-weight: normal;
                letter-spacing: 0.1em;
                line-height: 150%;
                margin-bottom: 15px;
@@ -45,7 +45,7 @@
                display: inline-block;
                font-family: $archia-semi-bold;
                font-size: 22px;
-               font-weight: 600;
+               font-weight: normal;
                line-height: 120%;
                margin-bottom: 15px;
             }
@@ -80,7 +80,7 @@
          color: $chloe-teal;
          font-family: $archia-semi-bold;
          font-size: 18px;
-         font-weight: 600;
+         font-weight: normal;
          line-height: 22px;
          text-decoration-line: underline;
       }

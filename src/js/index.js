@@ -109,7 +109,7 @@ const events = {
 function setUpAiAcademyPrevNextNav() {
    var postsCount = $('.listing').length;
 
-   if(postsCount >= 30) {
+   if(postsCount >= 300) {
       $('#ai-academy-prev-next-nav').addClass('active');
    }else{
       $('#ai-academy-prev-next-nav').removeClass('active');

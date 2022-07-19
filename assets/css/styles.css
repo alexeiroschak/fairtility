@@ -20765,7 +20765,7 @@ img {
 .ai-academy-listing .container {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
   padding: 10px;
   padding: 24px 20px;
   justify-content: start;
@@ -20796,7 +20796,7 @@ img {
   display: inline-block;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: 0.1em;
   line-height: 150%;
   margin-bottom: 15px;
@@ -20807,7 +20807,7 @@ img {
   display: inline-block;
   font-family: archiasemibold, sans-serif;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 120%;
   margin-bottom: 15px;
 }
@@ -20836,7 +20836,7 @@ img {
   color: #8BC4C1;
   font-family: archiasemibold, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 22px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -21465,7 +21465,7 @@ body.contact .gfield_html a {
   color: #8BC4C1;
   font-family: archiasemibold, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: 0.1em;
   line-height: 150%;
   padding-top: 45px;
@@ -21519,7 +21519,7 @@ body.contact .gfield_html a {
   color: #1F1F1E;
   font-family: archiasemibold, sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   opacity: 0.5;
 }
 .single-academy .container.post .footer .socials a,

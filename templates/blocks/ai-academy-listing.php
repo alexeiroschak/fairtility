@@ -23,10 +23,10 @@
                   </div>
                
                   <div class="title">
-                     <?php echo esc_html( $title ); ?>
+                     <?php echo $title; ?>
                   </div>
                   <div class="excerpt">
-                     <?php echo esc_html( $description ); ?>
+                     <?php echo $description; ?>
                   </div>
                </div>
             </a>
