@@ -21454,6 +21454,13 @@ body.careers .text-callout--container div p {
   margin-top: 80px;
 }
 
+body.contact .gfield_html {
+  color: #ECFAEC;
+}
+body.contact .gfield_html a {
+  color: #8BC4C1;
+}
+
 .single-academy .category {
   color: #8BC4C1;
   font-family: archiasemibold, sans-serif;
