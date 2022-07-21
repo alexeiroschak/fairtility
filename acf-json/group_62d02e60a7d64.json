@@ -3,13 +3,40 @@
     "title": "Block - AI Academy",
     "fields": [
         {
+            "key": "field_62d71d260a16d",
+            "label": "Show All",
+            "name": "show_all",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_62d02e60b7219",
             "label": "AI Academy Posts",
             "name": "ai_academy_posts",
             "type": "relationship",
             "instructions": "",
             "required": 1,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d71d260a16d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -26,7 +53,7 @@
             ],
             "elements": "",
             "min": "",
-            "max": "",
+            "max": 32,
             "return_format": "object"
         }
     ],
@@ -48,5 +75,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657917859
+    "modified": 1658265496
 }
