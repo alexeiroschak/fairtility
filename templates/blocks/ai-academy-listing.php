@@ -24,7 +24,7 @@
          $categories = get_the_category( $post->ID );
       ?>
          <a class="listing" href="<?php echo esc_url( $permalink ); ?>">
-            <div class="img bg-img" style="background-image:url(<?= $image ?>)"></div>
+            <img class="img bg-img" src="<?= $image ?>">
             <div class="description">
                <div class="category">
                   <?php 

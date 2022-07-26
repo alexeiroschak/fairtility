@@ -19275,6 +19275,9 @@ img {
     font-size: 16px;
   }
 }
+.image-and-text--right--copy a {
+  color: #8BC4C1;
+}
 .image-and-text--right--link {
   display: inline-block;
   margin-top: 33px;
@@ -20792,22 +20795,19 @@ img {
   padding: 24px 20px;
   justify-content: center;
 }
+@media screen and (max-width: 850px) {
+  .ai-academy-listing .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 .ai-academy-listing .container .listing {
   background-color: #ECFAEC;
   padding: 5px 5px 45px;
   text-decoration: none;
 }
-@media screen and (max-width: 900px) {
-  .ai-academy-listing .container .listing {
-    width: 100%;
-  }
-}
-.ai-academy-listing .container .listing .img.bg-img {
-  background-color: #ED7600;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 220px;
+.ai-academy-listing .container .listing .img {
+  width: 100%;
+  height: auto;
 }
 .ai-academy-listing .container .listing .description {
   padding: 20px 10px;
@@ -21459,18 +21459,18 @@ body.careers .text-callout--container div p {
   }
 }
 
-.academy .hero-headline .container h1 {
+.aiacademy .hero-headline .container h1 {
   padding: 24px 0;
 }
-.academy #ai-academy-intro-text .container .content--content {
+.aiacademy #ai-academy-intro-text .container .content--content {
   max-width: 100%;
 }
-.academy #ai-academy-intro-text .container .content--content p {
+.aiacademy #ai-academy-intro-text .container .content--content p {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
 }
-.academy footer#footer {
+.aiacademy footer#footer {
   margin-top: 80px;
 }
 
