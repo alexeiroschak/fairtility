@@ -18,6 +18,7 @@ function create_academy_posttype() {
          'menu_icon' => 'dashicons-admin-page',
          'supports' => array( 'title', 'editor', 'revisions'),
          'taxonomies' => array('category', 'post_tag'),
+         'rewrite' => array( 'slug' => 'aiacademy' )
       )
    );
 }
