@@ -7,7 +7,7 @@
             'post_status' => 'publish',
             'posts_per_page' => 30, 
             'orderby' => 'date',
-            'order' => 'desc'
+            'order' => 'asc'
          );
          $posts = get_posts( $args ); 
       }else{
