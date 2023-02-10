@@ -1,0 +1,45 @@
+.content-white-background {
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        padding: 30px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            padding: 30px 60px;
+        }
+
+        @include breakpoint($portrait) {
+            padding: 30px 20px;
+        }
+    }
+
+    &--content {
+        margin: 0 auto;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 150%;
+            color: $warm-black;
+
+            @include breakpoint($mobile) {
+                font-size: 16px;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+            color: $dark-cyan;
+        }
+    }
+}

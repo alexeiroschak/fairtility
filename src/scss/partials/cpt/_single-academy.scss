@@ -1,0 +1,85 @@
+.single-academy {
+   .category {
+      color: $chloe-teal;
+      font-family: $archia-semi-bold;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: 0.1em;
+      line-height: 150%;
+      padding-top: 45px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   
+   .block.hero-headline {
+      .container {
+         h1 {
+            padding: 45px 0 90px 0;
+         }
+      }
+   }
+   
+   .container {
+      .footer {
+         background-color: $warm-white;
+         padding: 45px 40px 70px 40px;
+         text-align: center;
+         
+         @include breakpoint($tablet) {
+            padding: 45px 0;
+         }
+
+         .rule {
+            border-top: 1px solid rgba(31, 31, 30, 0.3);
+            margin: 0 auto 40px auto;
+            max-width: 1420px;
+
+         }
+         
+         .socials {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+         
+            .title {
+               color: $warm-black;
+               font-family: $archia-semi-bold;
+               font-size: 16px;
+               font-weight: normal;
+               opacity: 0.5;
+            }
+            
+            a,
+            .ai-academy-copy-link {
+               color: $dark-cyan;
+               cursor: pointer;
+               font-size: 24px;
+               
+               .tooltip {
+                  background-color: $warm-black;
+                  border-radius: 5px;
+                  color: $warm-white;
+                  font-family: $archia-semi-bold;
+                  font-size: 10px;
+                  line-height: 10px;
+                  margin-left: -42px;
+                  margin-top: -23px;
+                  opacity: 0;
+                  padding: 5px 0;
+                  position: absolute;
+                  text-align: center;
+                  transition: 0.3s;
+                  visibility: hidden;
+                  width: 75px;
+                  
+                  &.show {
+                     opacity: 1;
+                     visibility: visible;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

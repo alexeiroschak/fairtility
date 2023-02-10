@@ -7,21 +7,20 @@
     }
 
     &--container {
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;
+            padding: 30px;
         }
 
         @include breakpoint($portrait) {
-            padding: 60px 20px;
+            padding: 30px 20px;
         }
 
         @include breakpoint($mobile) {
             width: calc(100% + 40px);
             margin-left: -20px;
-            padding: 30px 20px;
         }
 
         div {
@@ -37,7 +36,13 @@
 
             strong, b {
                 font-family: $archia-bold;
-                font-weight: bold;
+                font-weight: 400;
+            }
+
+            hr {
+                height: 1px;
+                background: rgba($warm-black, 0.25);
+                border: none;
             }
         }
 
@@ -46,7 +51,7 @@
             margin-top: 60px;
             font-family: $archia-semi-bold;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 22px;
             text-decoration: underline;
             color: $dark-cyan;

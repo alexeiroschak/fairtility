@@ -1,11 +1,7 @@
 .quote {
-    padding: 97px 0;
+    padding: 30px 0;
 
     @include breakpoint($portrait) {
-        padding: 60px 0;
-    }
-
-    @include breakpoint($mobile) {
         padding: 30px 0;
     }
 
@@ -76,7 +72,7 @@
                 margin-left: 20px;
                 font-family: $archia-bold;
                 font-size: 16px;
-                font-weight: 700;
+                font-weight: 400;
                 line-height: 22px;
                 letter-spacing: 0.2em;
                 text-transform: uppercase;
@@ -94,6 +90,7 @@
             margin-left: math.div(420, 1660) * 100%;
             font-family: $archia-semi-bold;
             font-size: 18px;
+            font-weight: 400;
             line-height: 22px;
             color: $chloe-teal;
             

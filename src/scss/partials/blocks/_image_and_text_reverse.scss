@@ -1,0 +1,112 @@
+.image-and-text-reverse {
+    .container {
+        @include breakpoint($mobile) {
+            padding: 0;
+        }
+    }
+
+    &--container {
+        display: flex;
+        padding: 30px 120px;
+        background: $warm-white;
+
+        @include breakpoint($tablet) {
+            padding: 30px 60px;
+        }
+
+        @include breakpoint($portrait) {
+            flex-direction: column;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 30px 20px;
+        }
+    }
+
+    &--left {        
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 60px;
+
+        @include breakpoint($tablet) {
+            margin-right: 30px;
+        }
+
+        @include breakpoint($portrait) {
+            margin-right: 0;
+        }
+
+        h2 {
+            margin: 0;
+            font-family: $archia-semi-bold;
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 100%;
+            color: $warm-black;
+
+            @include breakpoint($mobile) {
+                font-size: 36px;
+            }
+        }
+
+        &--copy {
+            margin-top: 60px;
+
+            p {
+                font-size: 18px;
+                line-height: 150%;
+                color: $warm-black;
+
+                @include breakpoint($mobile) {
+                    font-size: 16px;
+                }
+            }
+
+            ul {
+                padding-left: 20px;
+
+                li {
+                    line-height: 27px;
+                }
+            }
+
+            a {
+                text-decoration: underline;
+                color: $dark-cyan;
+            }
+        }
+
+        &--link {
+            display: inline-block;
+            margin-top: 33px;
+            font-family: $archia-semi-bold;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            text-decoration: underline;
+            color: $chloe-teal;
+
+            @include breakpoint($mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &--right {
+        flex: 0 0 auto;
+        width: math.div(820, 1660) * 100%;
+        max-width: 100%;
+
+        @include breakpoint($portrait) {
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -42,13 +42,31 @@
 @import "partials/blocks/two_col_with_form2";
 @import "partials/blocks/listing_with_headline_white_background";
 @import "partials/blocks/content";
+@import "partials/blocks/ai_academy_listing";
 @import "partials/blocks/article_listing";
 @import "partials/blocks/article_listing2";
+@import "partials/blocks/content_white_background";
+@import "partials/blocks/spacer";
+@import "partials/blocks/separator";
+@import "partials/blocks/separator_white_background";
+@import "partials/blocks/image_and_text_reverse";
+@import "partials/blocks/full_width_image_alt_white_background";
+@import "partials/blocks/full_width_image2";
+@import "partials/blocks/hero_video";
+
+/// Sections
+@import "partials/sections/mid_content_row";
 
 /// Pages
 @import "partials/pages/home";
 @import "partials/pages/careers";
 @import "partials/pages/media_publications";
+@import "partials/pages/chloe";
+@import "partials/pages/ai_academy";
+@import "partials/pages/contact";
+
+/// Custom Post Types
+@import "partials/cpt/single-academy";
 
 /// Footer
 @import "partials/footer";

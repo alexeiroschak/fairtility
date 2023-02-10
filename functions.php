@@ -5,4 +5,6 @@ require_once('includes/blocks.php');
 require_once('includes/view.php');
 require_once('includes/features.php');
 
+include('includes/cpt/academy.php');
+
 ?>

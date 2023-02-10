@@ -87,6 +87,27 @@
                 margin-right: 0;
             }
 
+            &:hover, &.current-menu-item {
+                a {
+                    color: $chloe-teal;
+
+                    @include breakpoint($portrait) {
+                        color: $dark-cyan;
+                    }
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.demo {
+                a {
+                    font-family: $archia-semi-bold;
+                    font-weight: 400;
+                }
+            }
+
             a {
                 display: block;
                 position: relative;
@@ -104,23 +125,6 @@
 
                 @include breakpoint(812px) {
                     font-size: 14px;
-                }
-
-                &.demo {
-                    font-family: $archia-semi-bold;
-                    font-weight: 600;
-                }
-
-                &:hover, &.active {
-                    color: $chloe-teal;
-
-                    @include breakpoint($portrait) {
-                        color: $dark-cyan;
-                    }
-                    
-                    &:after {
-                        opacity: 1;
-                    }
                 }
 
                 &:after {

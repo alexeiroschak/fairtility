@@ -6,7 +6,7 @@
                 foreach ($columns as $col) :
             ?>
                 <div class="two-column-white-background--container--col">
-                    <div class="two-column-white-background--container--col--preview" style="background-image:url(<?= $col['image'] ?>)"></div>
+                    <img src="<?= $col['image'] ?>" alt="" class="two-column-white-background--container--col--preview">
                     <h2><?= $col['headline'] ?></h2>
                     <div class="two-column-white-background--container--col--copy">
                         <?= $col['copy'] ?>

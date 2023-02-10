@@ -7,11 +7,11 @@
     }
 
     &--container {
-        padding: 60px 120px;
+        padding: 30px 120px;
         background: $warm-white;
 
         @include breakpoint($tablet) {
-            padding: 60px;   
+            padding: 30px 60px;   
         }
 
         @include breakpoint($portrait) {
@@ -31,6 +31,7 @@
                 margin: 0 auto 30px;
                 font-family: $archia-semi-bold;
                 font-size: 18px;
+                font-weight: 400;
                 line-height: 150%;
                 color: $warm-black;
             }
@@ -40,7 +41,6 @@
                 margin: 0 auto;
 
                 p {
-                    margin-top: 27px;
                     font-size: 18px;
                     line-height: 150%;
                     color: $warm-black;

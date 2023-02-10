@@ -2,33 +2,37 @@
     <div class="container">
         <div class="article-listing--container">
             <?php
-                $articles = get_field('articles');
+                $headline = get_field('headline');
+                $category = get_field('category');
+                $query = new WP_Query([
+                    'post_type' => 'post',
+                    'category_name' => $category->slug
+                ]);
+
                 $count = 0;
-                foreach ($articles as $article) :
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) :
+                        $query->the_post();
             ?>
                 <div class="article-listing--row">
                     <div class="article-listing--row--left">
                         <?php if ($count == 0) : ?>
-                            <h2><?= get_field('headline') ?></h2>
+                            <h2><?= $headline ?></h2>
                         <?php endif ?>
                     </div>
                     <div class="article-listing--row--right">
-                        <?php if ($article['type'] === 'post') : ?>
-                            <h3><a href="<?= get_permalink($article['post']) ?>"><?= $article['post']->post_title ?></a></h3>
-                            <span><?= get_the_date('j F Y', $article['post']) ?></span>
-                            <div class="article-listing--row--right--copy">
-                                <p><?= get_the_excerpt($article['post']) ?></p>
-                            </div>
-                        <?php elseif ($article['type'] === 'external') : ?>
-                            <h3><a href="<?= $article['link_url'] ?>"><?= $article['link_text'] ?></a></h3>
-                            <span><?= $article['date'] ?></span>
-                            <div class="article-listing--row--right--copy">
-                                <?= $article['excerpt'] ?>
-                            </div>
+                        <?php if (get_field('external_link', get_the_ID())) : ?>
+                            <h3><a href="<?= get_field('external_link', get_the_ID()) ?>" target="_blank"><?php the_title() ?></a></h3>
+                        <?php else : ?>
+                            <h3><a href="<?= get_permalink() ?>"><?php the_title() ?></a></h3>
                         <?php endif ?>
+                        <span><?= get_the_date('j F Y') ?></span>
+                        <div class="article-listing--row--right--copy">
+                            <p><?= get_the_excerpt() ?></p>
+                        </div>
                     </div>
                 </div>
-            <?php $count++; endforeach ?>
+            <?php $count++; endwhile; wp_reset_postdata(); endif ?>
         </div>
     </div>
 </section>
